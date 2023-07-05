@@ -107,6 +107,129 @@ body {
     align-items: center;
     scroll-behavior: smooth;
 }
+.imagecard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 5em;
+    height: 5em;
+    color: white;
+    align-items: center;
+}
+.imagecard::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(Images/Images/Copy\ of\ WhatsApp\ Image\ 2023-07-04\ at\ 5.42.33\ PM.jpeg);
+    background-size: cover;
+}
+.imagecard1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 5em;
+    height: 5em;
+    color: white;
+    align-items: center;
+}
+.imagecard1::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(Images/Images/WhatsApp\ Image\ 2023-07-04\ at\ 5.42.34\ PM\ \(1\).jpeg);
+    background-size: cover;
+}
+.imagecard2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 5em;
+    height: 5em;
+    color: white;
+    align-items: center;
+}
+.imagecard2::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(Images/Images/WhatsApp\ Image\ 2023-07-04\ at\ 5.42.34\ PM.jpeg);
+    background-size: cover;
+}
+.name{
+    font-family: 'Bebas Neue', sans-serif;
+    visibility: hidden;
+    z-index: 5;
+    transform: translateY(50px);
+}
+.Date{
+    font-family:'Poppins', sans-serif ;
+    visibility: hidden;
+    font-size: 0.5em;
+    transform: translateY(50px);
+    z-index: 5;
+}
+@keyframes rise {
+    100%{
+        transform: translateY(0px);
+    }
+}
+ .imagecontainer:hover > .imagecard::before{
+    filter: brightness(0.2);
+}
+.imagecontainer:hover > .imagecard > .name{
+    visibility: visible;
+    animation-name: rise;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.imagecontainer:hover > .imagecard > .Date{
+    visibility: visible;
+    animation-name: rise;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.imagecontainer:hover > .imagecard1::before{
+    filter: brightness(0.2);
+}
+.imagecontainer:hover > .imagecard1 > .name{
+    visibility: visible;
+    animation-name: rise;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.imagecontainer:hover > .imagecard1 > .Date{
+    visibility: visible;
+    animation-name: rise;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.imagecontainer:hover > .imagecard2::before{
+    filter: brightness(0.2);
+}
+.imagecontainer:hover > .imagecard2 > .name{
+    visibility: visible;
+    animation-name: rise;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.imagecontainer:hover > .imagecard2 > .Date{
+    visibility: visible;
+    animation-name: rise;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
 .Title{
     font-family: Extenda;
     font-size: 6em;
@@ -116,16 +239,19 @@ body {
 .eventcontainer{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-bottom: 2em;
+    width: 100%;
 }
-.eventcontainer > div {
+/* .eventcontainer > div {
     width: 25%;
-}
+} */
 .imagecontainer > img{
     width: 100%;
 }
 .imagecontainer{
-    width: 25%;
+ /*    width: 25%; */
+    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
