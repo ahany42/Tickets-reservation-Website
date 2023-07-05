@@ -96,7 +96,7 @@ body {
     flex-wrap: wrap;
 }
 #gallery > img{
-    width: 30.9vw;
+    width: 25em;
     flex-grow: 2;
     height: 70vh;
 }
