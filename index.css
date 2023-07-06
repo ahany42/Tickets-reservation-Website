@@ -26,8 +26,8 @@ body {
     transform: rotate(90deg);
     flex-direction: row-reverse;
     font-family: 'Bebas Neue', sans-serif;
-    padding-bottom: 18.5em;
-    padding-right: 9em;
+    padding-bottom: 17.5em;
+    padding-right: 6em;
     font-size: 2em;
     
 }
@@ -96,7 +96,7 @@ body {
     flex-wrap: wrap;
 }
 #gallery > img{
-    width: 25em;
+    width: 30em;
     flex-grow: 2;
     height: 70vh;
 }
@@ -167,14 +167,17 @@ body {
     background-image: url(Images/Images/WhatsApp\ Image\ 2023-07-04\ at\ 5.42.34\ PM.jpeg);
     background-size: cover;
 }
-.name{
-    font-family: 'Bebas Neue', sans-serif;
+.info {
+    font-family: 'Poppins', sans-serif;
     visibility: hidden;
     z-index: 5;
+    font-size:0.4em;
+    padding:1em;
     transform: translateY(50px);
 }
-.Date{
-    font-family:'Poppins', sans-serif ;
+.Date {
+    
+    font-family: 'Bebas Neue', sans-serif;
     visibility: hidden;
     font-size: 0.5em;
     transform: translateY(50px);
@@ -188,7 +191,7 @@ body {
  .imagecontainer:hover > .imagecard::before{
     filter: brightness(0.2);
 }
-.imagecontainer:hover > .imagecard > .name{
+.imagecontainer:hover > .imagecard > .info{
     visibility: visible;
     animation-name: rise;
     animation-fill-mode: forwards;
@@ -203,7 +206,7 @@ body {
 .imagecontainer:hover > .imagecard1::before{
     filter: brightness(0.2);
 }
-.imagecontainer:hover > .imagecard1 > .name{
+.imagecontainer:hover > .imagecard1 > .info{
     visibility: visible;
     animation-name: rise;
     animation-fill-mode: forwards;
@@ -218,7 +221,7 @@ body {
 .imagecontainer:hover > .imagecard2::before{
     filter: brightness(0.2);
 }
-.imagecontainer:hover > .imagecard2 > .name{
+.imagecontainer:hover > .imagecard2 > .info{
     visibility: visible;
     animation-name: rise;
     animation-fill-mode: forwards;
@@ -281,54 +284,48 @@ body {
     width: 100%;
     
 }
-#footer >.footercontent > h3{
-    font-family: Extenda;
-    font-size: 6rem;
-    margin: 0;
-    font-weight: 500;
-    
-}
+
 .footercontent > .icons{
     display: flex;
     justify-content: space-between;
-    width: 70%;
-    font-size: 3rem;
+    width: 20%;
+    font-size: 1rem;
+    padding-top:3em;
+    
     
 
 }
-.footercontent > .icons> .image> img{
-    position: relative;
-    width: 8rem;
-    padding-right: 1.8em;
-}
+    .footercontent > .image > img {
+        position: relative;
+        width: 4rem;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        display: flex;
+        justify-content: center;
+    }
 .footercontent > .icons > a:hover{
     color: #d2b933;
     
 }
-.footercontent > .icons > .insta{
-    color: #fff;
-    text-decoration: none;
-    
-}
-.footercontent > .icons > .envelope{
-    color: #fff;
-    text-decoration: none;
-    
-}
+    .footercontent > .icons > .insta {
+        color: #fff;
+        text-decoration: none;
+       
+       
+    }
+    .footercontent > .icons > .envelope {
+        color: #fff;
+        text-decoration: none;
+       
+      
+    }
+    .footercontent > .icons > .fb {
+        color: #fff;
+        text-decoration: none;
+ 
+    }
 #footer > .devs{
     margin: 0 0 0 93%;
     font-family: 'Bebas Neue', sans-serif;
 }
 
-/* .policy{
-    /* padding-right: 12em; 
-} */
-/* display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2em;
-    width: 122.5%;
-    height: 13%;
-    transform: rotate(90deg);
-    position: fixed; */
