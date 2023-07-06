@@ -26,7 +26,7 @@ body {
     transform: rotate(90deg);
     flex-direction: row-reverse;
     font-family: 'Bebas Neue', sans-serif;
-    padding-bottom: 17.5em;
+    padding-bottom: 18.5em;
     padding-right: 6em;
     font-size: 2em;
     
@@ -66,7 +66,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
     scroll-behavior: smooth;
 }
 #main > img {
@@ -88,7 +87,6 @@ body {
     display:flex;
     align-items:center;
     justify-content:center;
-
 }
 #gallery{
     display: flex;
@@ -107,7 +105,7 @@ body {
     align-items: center;
     scroll-behavior: smooth;
 }
-.imagecard{
+.imagecard,.imagecard1,.imagecard2{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -116,56 +114,25 @@ body {
     height: 5em;
     color: white;
     align-items: center;
+}
+.imagecard::before,.imagecard1::before,.imagecard2::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    transition: 0.6s ease-in-out;
 }
 .imagecard::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     background-image: url(Images/Images/Copy\ of\ WhatsApp\ Image\ 2023-07-04\ at\ 5.42.33\ PM.jpeg);
-    background-size: cover;
-}
-.imagecard1{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 5em;
-    height: 5em;
-    color: white;
-    align-items: center;
 }
 .imagecard1::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     background-image: url(Images/Images/WhatsApp\ Image\ 2023-07-04\ at\ 5.42.34\ PM\ \(1\).jpeg);
-    background-size: cover;
-}
-.imagecard2{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 5em;
-    height: 5em;
-    color: white;
-    align-items: center;
 }
 .imagecard2::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     background-image: url(Images/Images/WhatsApp\ Image\ 2023-07-04\ at\ 5.42.34\ PM.jpeg);
-    background-size: cover;
 }
 .info {
     font-family: 'Poppins', sans-serif;
@@ -241,51 +208,24 @@ body {
         transform: translateY(0px);
     }
 }
- .imagecontainer:hover > .imagecard::before{
+.extra::before{
     filter: brightness(0.2);
 }
-.imagecontainer:hover > .imagecard > .info{
-    visibility: visible;
-    animation-name: rise;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-}
-.imagecontainer:hover > .imagecard > .Date{
-    visibility: visible;
-    animation-name: rise;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-}
-.imagecontainer:hover > .imagecard1::before{
+ /* .imagecontainer:hover > .imagecard::before,.imagecontainer:hover > .imagecard1::before,.imagecontainer:hover > .imagecard2::before{
     filter: brightness(0.2);
-}
-.imagecontainer:hover > .imagecard1 > .info{
+} */
+.infoextra{
     visibility: visible;
     animation-name: rise;
     animation-fill-mode: forwards;
     animation-duration: 1s;
 }
-.imagecontainer:hover > .imagecard1 > .Date{
+/* .imagecontainer:hover > .imagecard > .info,.imagecontainer:hover > .imagecard > .Date,.imagecontainer:hover > .imagecard1 > .info,.imagecontainer:hover > .imagecard1 > .Date,.imagecontainer:hover > .imagecard2 > .info,.imagecontainer:hover > .imagecard2 > .Date{
     visibility: visible;
     animation-name: rise;
     animation-fill-mode: forwards;
     animation-duration: 1s;
-}
-.imagecontainer:hover > .imagecard2::before{
-    filter: brightness(0.2);
-}
-.imagecontainer:hover > .imagecard2 > .info{
-    visibility: visible;
-    animation-name: rise;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-}
-.imagecontainer:hover > .imagecard2 > .Date{
-    visibility: visible;
-    animation-name: rise;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-}
+} */
 .Title{
     font-family: Extenda;
     font-size: 6em;
@@ -294,7 +234,7 @@ body {
 }
 .eventcontainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 2em;
     width: 100%;
@@ -345,7 +285,7 @@ body {
     justify-content: space-between;
     width: 20%;
     font-size: 1rem;
-    padding-top:3em;
+    padding:0.5em 0;
     
     
 

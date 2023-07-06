@@ -10,7 +10,10 @@
 }
 body {
     margin: 0px;
+    border-style: solid;
     overflow-x: hidden;
+    border-color: black;
+    border-width: 2em 0 0 0;
     scroll-behavior: smooth;
 }
 
@@ -29,7 +32,7 @@ body {
     transform: rotate(90deg);
     flex-direction: row-reverse;
     font-family: 'Bebas Neue', sans-serif;
-    padding-bottom: 17.5em;
+    padding-bottom: 18.5em;
     padding-right: 6em;
     font-size: 2em;
     
@@ -67,29 +70,87 @@ body {
     width: 94%;
     padding-top: 2em;
     margin-bottom: 1em;
+    /* height: 75vh; */
+    background-color: white;
     /*background-image: url("2crop.png");*/
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
+ .policy{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;
+    height: 100%; */
+}
 .title {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 200;
+    color: #d2b933;
     font-size: 2em;
-    padding-top: 1em;
+    padding: 0 0.5em;
+    /* padding-top: 1em;
     padding-left: 1em;
-    padding-right: 1em;
+    padding-right: 1em; */
 }
+/* .title:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+} */
+/* .content::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    border-radius: 1em;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: display 1s ease-in-out both;
+    width: 100%;
+} */
 .content {
     font-family: 'Poppins', sans-serif;
+    /* position: relative; */
+    /* color: white; */
+    /* z-index: 5; */
+    /* height: 20vh; */
+    width: 94%;
     font-weight: 400;
     font-size: 1.3em;
     padding-top: 1em;
     padding-bottom: 2em;
     padding-left: 1em;
     padding-right: 1em;
+    
 }
+/* .contentextra{
+    animation: hide 1s forwards;
+    width: 0%;
+}
+.contentextra::before{
+    animation: hide 1s forwards;
+    width: 0%;
+}  */
+/* .content::after{
+    width: 94%;
+    z-index: 5;
+    color: white;
+} */
+/* @keyframes display {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes hide{
+    100%{
+        width: 0%;
+    }
+} */
 #footer {
     height: auto;
     width: 100%;
@@ -114,7 +175,7 @@ body {
         justify-content: space-between;
         width: 20%;
         font-size: 1rem;
-        padding-top: 3em;
+        padding: 0.5em 0;
     }
 
     .footercontent > .image > img {
