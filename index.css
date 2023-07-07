@@ -106,7 +106,7 @@ body {
     flex-wrap: wrap;
 }
 #gallery > img{
-    width: 30em;
+    width: 25em;
     flex-grow: 2;
     height: 70vh;
 }
@@ -333,5 +333,10 @@ body {
 #footer > .devs{
     margin: 0 0 0 93%;
     font-family: 'Bebas Neue', sans-serif;
+}
+@media (min-width:1537px) {
+    #gallery > img{
+        width: 30em;
+    }
 }
 
