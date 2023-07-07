@@ -82,9 +82,10 @@ body {
     }
 #main {
     width: 94%;
-    height: 80vh;
+    /* height: 80vh; */
     background: #fff;
     scroll-behavior: smooth;
+    padding-bottom: 6em;
 }
 
     #main > img {

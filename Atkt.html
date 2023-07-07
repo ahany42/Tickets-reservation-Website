@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Atkt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Join us</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Apply Now</div>
+        <form action="">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" id="Fname" placeholder="Enter your First name" required>
+                    <span class="warning" id="warningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" id="Lname" placeholder="Enter your Last name" required>
+                    <span class="warning" id="warningLname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" id="phone" placeholder="Enter your number" required>
+                    <span class="warning" id="warningphone"><i class="fa fa-light fa-circle-exclamation"></i>Enter a vaild phone number</span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" id="Email" placeholder="Enter your email " required>
+                    <span class="warning" id="warningemail"><i class="fa fa-light fa-circle-exclamation"></i>This email is invalid. Make sure it's written like example@email.com</span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Birth Date</span>
+                    <input type="date" id="date" placeholder="Enter your age" required>
+                    <span class="warning" id="warningdate"><i class="fa fa-light fa-circle-exclamation"></i>Enter a vaild date.</span>
+                </div>
+            </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span id="dot"class="dot two"></span>
+                        <span id="dot" class="gender">Female</span>
+                    </label>
+
+                </div>
+                </div>
+                
+                <span class="warning" id="warninggender"><i class="fa fa-light fa-circle-exclamation"></i>Select your gender.</span>
+            <a class="button" id="join">
+                <div type="search" value="Join" id="submitform">Join</div>
+            </a>
+            <div class="cancelcontainer">
+                <a href="index.html" class="cancel">Cancel</a>
+            </div>
+        </form>
+    </div>
+    <script src="Atkt.js"></script>
+</body>
+</html>
