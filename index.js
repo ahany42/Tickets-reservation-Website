@@ -222,15 +222,14 @@ for(var i =0;UpButtons.length>i;++i){
   window.addEventListener('DOMContentLoaded', (event) => {
     
     const eventsSection = document.querySelector('#events');
-    const homeLink = document.querySelector('#main');
+     homeLink = document.querySelector('#main');
 
     function setActiveNavLink() {
       const scrollPosition = window.scrollY;
       const eventsSectionTop = eventsSection.offsetTop - 50; 
-
       if (scrollPosition >= eventsSectionTop) {
         navLinks.forEach(link => {
-          if (link.getAttribute('href') === '#events') {
+          if (link.getAttribute('href') === 'index.html#events') {
             link.classList.add('active');
           } else {
             link.classList.remove('active');
@@ -239,7 +238,10 @@ for(var i =0;UpButtons.length>i;++i){
       } else {
         homeLink.classList.add('active');
         navLinks.forEach(link => {
-          if (link.getAttribute('href') === '#events') {
+            if(link.getAttribute('href') === 'index.html#main'){
+                link.classList.add('active');
+            }
+          if (link.getAttribute('href') === 'index.html#events') {
             link.classList.remove('active');
           }
         });
