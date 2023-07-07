@@ -16,7 +16,9 @@ body {
     border-width: 2em 0 0 0;
     scroll-behavior: smooth;
 }
-
+.policy{
+    margin-top:3em;
+}
 .sidebar {
     height: 100%;
     position: fixed;
@@ -76,7 +78,7 @@ body {
 .main {
     width: 94%;
     padding-top: 2em;
-    margin-bottom: 23vh;
+    margin-bottom: 18vh;
     /* height: 75vh; */
     background-color: white;
     /*background-image: url("2crop.png");*/
@@ -224,3 +226,4 @@ body {
         color: #d2b933;
         cursor: pointer;
     }
+ 

@@ -14,7 +14,7 @@ body {
     margin: 0px;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    /*background-color: #d2b933;*/
+   
 }
 
 
@@ -82,7 +82,7 @@ body {
     }
 #main {
     width: 94%;
-    height: 100vh;
+    height: 80vh;
     background: #fff;
     scroll-behavior: smooth;
 }
@@ -95,15 +95,13 @@ body {
 
     }
 .desccontent {
-    padding-top: 6em;
+    padding-top: 1em;
     display: flex;
     flex-direction: column;
    justify-content:center;
    align-items:center;
     left: 8%;
     flex-wrap: wrap;
-   /* width: 50vw;
-    height: 56vh;*/
 }
 .whoarewepargraph {
    padding-right:1em;
@@ -116,7 +114,6 @@ body {
  
 }
 .programsimg > img {
-   
     z-index:5;
     padding-bottom:3em;
 }
@@ -126,3 +123,146 @@ body {
     color: #d2b933;
     font-family: 'Poppins', sans-serif;
 }
+#footer {
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+.footercontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    font-weight: 500;
+}
+
+    .footercontent > .image > img {
+        position: relative;
+        width: 8rem;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footercontent > .icons > a:hover {
+        color: #d2b933;
+    }
+
+    .footercontent > .icons > .insta {
+        color: #000;
+        text-decoration: none;
+    }
+
+#footer > .devs {
+    margin: 0 0 0 93%;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration-line: none;
+    color: #000;
+    font-weight: 500;
+    display: block;
+}
+
+    #footer > .devs:hover {
+        color: #d2b933;
+        cursor: pointer;
+    }
+.teapic>img {
+    width: 30vw;
+}
+.gallery > img {
+    width: 40em;
+    padding-bottom: 2em;
+    height: 30em;
+    
+}
+.imgleft {
+    border-radius: 1em;
+    border-bottom-right-radius: 20em;
+    border-bottom-left-radius: 3em;
+}
+.imgright {
+    border-radius: 1em;
+    border-bottom-left-radius: 20em;
+    border-bottom-right-radius: 3em;
+}
+.gallery {
+    width: 94%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallerytxt {
+    width: 45%;
+    font-family: 'Poppins', sans-serif;
+    font-size:2em;
+    font-weight:500;
+    text-align:left;
+    padding-top:5em;
+}
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 34px;
+    text-decoration-line: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    width: 50px;
+}
+
+    .button::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        border-radius: inherit;
+        scale: 0;
+        z-index: -1;
+        background-color: rgb(0,0,0);
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    .button:hover::before {
+        scale: 3;
+    }
+
+    .button:hover {
+        color: white;
+        scale: 1.1;
+        box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+    }
+
+    .button:active {
+        scale: 1;
+    }
+
+.joinus {
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration-line: none;
+    color: black;
+    font-size: 4em;
+}
+.apply{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:5em;
+}
+
