@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Book a Ticket</title>
 </head>
 <body>
     <div class="container">
-        <div class="title">Ticket</div>
+        <div class="title">Ticket Booking</div>
         <form action="">
             <div class="user-details">
                 <div class="input-box">
@@ -36,7 +35,7 @@
                 </div>
                 <div class="input-box">
                     <span class="details">National ID</span>
-                    <input type="file" placeholder="" required>
+                    <input type="file" multiple="2" placeholder="" required id="nationalid">
                 </div>
                 <div class="input-box">
                     <span class="details">Birth Date</span>
@@ -62,6 +61,9 @@
             
             <div class="button">
                 <input type="submit" value="Book">
+            </div>
+            <div class="cancelcontainer">
+                <a href="index.html" class="cancel">Cancel booking</a>
             </div>
         </form>
     </div>

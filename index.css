@@ -333,6 +333,13 @@ body {
 #footer > .devs{
     margin: 0 0 0 93%;
     font-family: 'Bebas Neue', sans-serif;
+    text-decoration-line: none;
+    color: white;
+    display: block;
+}
+#footer > .devs:hover{
+    color: #d2b933;
+    cursor: pointer;
 }
 @media (min-width:1537px) {
     #gallery > img{
