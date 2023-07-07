@@ -98,31 +98,31 @@ body {
     padding-top: 6em;
     display: flex;
     flex-direction: column;
-    position: relative;
+   justify-content:center;
+   align-items:center;
     left: 8%;
     flex-wrap: wrap;
-    width: 50vw;
-    height: 56vh;
-}
-.whoarewe {
-    font-size: 8em;
-    font-weight: 600;
-    font-family:  'Poppins', sans-serif;
-    justify-content:center;
-    display:flex;
-    position: relative;
-    right: 4%;
-    align-items:center;
-    padding-left: 0.6em; 
-   
+   /* width: 50vw;
+    height: 56vh;*/
 }
 .whoarewepargraph {
-    
-    padding-right:6em;
-    position: relative;
+   padding-right:1em;
+   padding-left:1em;
     top: 5%;
     left: 10%;
     font-size: 1.3em;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+.programsimg > img {
+   
+    z-index:5;
+    padding-bottom:3em;
+}
+.whoarewepargraph > span {
+    font-weight: 800;
+    font-size: 3em;
+    color: #d2b933;
     font-family: 'Poppins', sans-serif;
 }

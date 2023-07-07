@@ -56,6 +56,13 @@ body {
     .sidebar > .navigation > a:hover::after{
         width: 100%;
     }
+    .sidebar > .navigation > a.active::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: black;
+      }
     .sidebar > img{
         position: absolute;
         left: 63%;

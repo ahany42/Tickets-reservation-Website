@@ -199,3 +199,54 @@ for(var i =0;UpButtons.length>i;++i){
         UpDate[index].classList.remove("infoextra");
     })
 }
+
+ // code for click and indicate tab
+ const navLinks = document.querySelectorAll('.navigation a');
+
+  
+  function handleClick(event) {
+    
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+    });
+
+    
+    event.target.classList.add('active');
+  }
+
+  
+  navLinks.forEach(link => {
+    link.addEventListener('click', handleClick);
+  });
+   // code for scroll and indicate tab
+  window.addEventListener('DOMContentLoaded', (event) => {
+    
+    const eventsSection = document.querySelector('#events');
+     homeLink = document.querySelector('#main');
+
+    function setActiveNavLink() {
+      const scrollPosition = window.scrollY;
+      const eventsSectionTop = eventsSection.offsetTop - 50; 
+      if (scrollPosition >= eventsSectionTop) {
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === 'index.html#events') {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      } else {
+        homeLink.classList.add('active');
+        navLinks.forEach(link => {
+            if(link.getAttribute('href') === 'index.html#main'){
+                link.classList.add('active');
+            }
+          if (link.getAttribute('href') === 'index.html#events') {
+            link.classList.remove('active');
+          }
+        });
+      }
+    }
+
+    window.addEventListener('scroll', setActiveNavLink);
+  });
