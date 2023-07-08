@@ -359,6 +359,7 @@ body {
         flex-direction: column;
         position: fixed;
         width: 100%;
+        z-index: 20;
     }
     .headeroff{
         padding: 1em;
