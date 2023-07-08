@@ -125,7 +125,7 @@ form > .button{
     margin-top: 45px;
     transition: 0.6s;
 }
-form > .button > input{
+form > .button > input,.button > div{
     height: 100%;
     width: 100%;
     font-size: 25px;
@@ -138,7 +138,7 @@ form > .button > input{
 form .button input:hover{
     background: black;
 }
-.button:hover {
+.button:hover,.button > div:hover {
     color: white;
     scale: 1.05;
     box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
@@ -157,6 +157,24 @@ form .button input:hover{
     text-decoration-line: underline;
     cursor: pointer;
 }
+.warning{
+    color: red;
+    display: none;
+    padding-top: 0.5em;
+}
+.warning > i{
+    padding-right: 0.5em;
+}
+#warninggender{
+    padding-bottom: 0.5em;
+}
+a{
+    text-decoration-line: none;
+}
+.button > div{
+    text-align: center;
+    padding: 0.1em 0;
+}
 @media(max-width:584px){
     .container{
         max-width: 100%;
@@ -166,4 +184,3 @@ form .button input:hover{
         width:100%;
     }
 }
-

@@ -6,18 +6,27 @@ var warningFname=document.getElementById("warningFname");
 var warningLname=document.getElementById("warningLname");
 var warninggender=document.getElementById("warninggender");
 var submitbutton = document.getElementById("submitform");
+//const emailInput = document.getElementById("Email");
 submitbutton.disabled = true;
 function validation(){
     var success=true;
     var email=document.getElementById("Email").value;
     var isEmail=false;
-        // Regular expression for email search pattern
-        var re = /^[^\s@]+@[^\s@]+$/;
-        // If email's pattern is found in variable re
-        if (re.test(email)) {
-            isEmail = true;
-        }
-    if(isEmail==false){
+     // Regular expression for email search pattern
+     var re = /^[^\s@]+@[^\s@]+$/;
+     // If email's pattern is found in variable re
+     if (re.test(email)) {
+         isEmail = true;
+     }
+    //if (email === '') {
+     ///   warningemail2.style.display = "block";
+        
+   // }
+   // else {
+      //  warningemail2.style.display = "none";
+
+    //}
+      if(isEmail==false){
         warningemail.style.display = "block";
         success=false;
     }else{
