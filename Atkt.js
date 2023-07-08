@@ -83,7 +83,7 @@ function validation(){
         warninggender.style.display = "none";
     }
     if(success){
-        join.setAttribute("href","programs.html");
+        join.setAttribute("href","index.html");
         submitbutton.disabled = false;
     }else{
         submitbutton.disabled = true;
