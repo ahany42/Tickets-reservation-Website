@@ -1,6 +1,6 @@
 //images handling
 var gallery = document.getElementsByClassName("gallery");
-if(window.matchMedia("(max-width:767px)").matches || window.matchMedia("(min-width:768px) and (max-width:991px)").matches){
+if(window.matchMedia("(max-width:767px)").matches || window.matchMedia("(min-width:768px) and (max-width:991px)").matches || window.matchMedia("(min-width: 992px)and (max-width:1280px)").matches){
   console.log("ana bmatch");
   gallery[1].innerHTML = '<img class="imgright" src="WhatsApp Image 2023-07-04 at 1.36.47 PM (1).jpeg"><div class="gallerytxt">Our CEO, Ahmed Samir, was welcoming everyone to the company and proceeded by letting them know about the work procedure.</div>'
   gallery[3].innerHTML = '<img class="imgright" src="WhatsApp Image 2023-07-04 at 1.36.46 PM (2).jpeg"><div class="gallerytxt">The academy is not only all about work;yet, it is a whole experience where you get to build a community and have a blast</div>'

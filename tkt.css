@@ -85,7 +85,7 @@ input[type='date']{
     color: white;
     font-family: 'Bebas Neue' ,sans-serif;
     border-radius: 0.5em;
-    margin-right: 5em;
+    margin-right: 4.5em;
     width: 50%;
     height: 100%;
 }
@@ -175,7 +175,7 @@ a{
     text-align: center;
     padding: 0.1em 0;
 }
-@media(max-width:584px){
+@media(max-width:399px){
     .container{
         max-width: 100%;
     }
@@ -183,9 +183,25 @@ a{
         margin-bottom: 15px;
         width:100%;
     }
+    ::-webkit-file-upload-button{
+        background-color: black;
+        color: white;
+        font-family: 'Bebas Neue' ,sans-serif;
+        border-radius: 0.5em;
+        margin-right:18%;
+        width: 50%;
+        height: 100%;
+    }
 }
 /* Mobile */
-@media (max-width:767px) {
+@media (min-width:400px) and (max-width:767px) {
+    .container{
+        max-width: 100%;
+    }
+    form > .user-details > .input-box{
+        margin-bottom: 15px;
+        width:100%;
+    }
     body{
         height: fit-content;
         margin-top: 20%;
@@ -193,4 +209,17 @@ a{
     ::-webkit-scrollbar {
         display: none;
        }
+       ::-webkit-file-upload-button{
+        background-color: black;
+        color: white;
+        font-family: 'Bebas Neue' ,sans-serif;
+        border-radius: 0.5em;
+        margin-right:27%;
+        width: 50%;
+        height: 100%;
+    }
+}
+/* Small screen */
+@media (min-width:768px) and (max-width:991px) {
+
 }

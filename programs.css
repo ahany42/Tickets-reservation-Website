@@ -368,6 +368,15 @@ body {
     #Policybutton{
         margin-bottom: 1em;
     }
+    #main{
+        padding-top: 5em;
+    }
+    #main,#apply,.gallery{
+        width: 100%;
+    }
+    .whoarewepargraph > span{
+        font-size: 1.1em;
+    }
     .headeron > a{
         color: var(--primary-color);
         font-size: 1.2em;
@@ -378,15 +387,18 @@ body {
     .gallery > img{
         width: 25em;
         height: 15em;
-    }
-    .imgleft{
-        border-bottom-right-radius: 12em;
-    }
-    .imgright{
-        border-bottom-left-radius: 12em;
+        border-radius: 0em;
+        padding: 2em;
     }
     .gallerytxt{
-        padding-bottom: 3em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 1.5em;
+        width: 75%;
+        text-align: start;
+    }
+    #apply{
+        padding-top: 4em;
     }
     .footercontent > .icons {
         width: 75%;
@@ -439,6 +451,15 @@ body {
     #Policybutton{
         margin-bottom: 1em;
     }
+    #main{
+        padding-top: 5em;
+    }
+    #main,#apply,.gallery{
+        width: 100%;
+    }
+    .whoarewepargraph > span{
+        font-size: 1.1em;
+    }
     .headeron > a{
         color: white;
         font-size: 1.2em;
@@ -446,8 +467,19 @@ body {
         text-decoration-line: none;
         font-family: 'Bebas Neue' ,sans-serif;
     }
+    .gallery > img{
+        border-radius: 4em;
+        padding: 2em;
+    }
     .gallerytxt{
-        padding-bottom: 3em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 1.5em;
+        width: 75%;
+        text-align: start;
+    }
+    #apply{
+        padding-top: 4em;
     }
     .footercontent > .icons {
         width: 75%;
@@ -465,8 +497,96 @@ body {
         display: none;
        }
 }
+/*Between medium*/
+@media (min-width:992px) and (max-width:1024px){
+    .sidebar {
+        display: none;
+    }
+    .menubar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+    }
+    .headeroff{
+        padding: 1em;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headeroff > img{
+        zoom: 0.3;
+    }
+    .headeron{
+        padding: 0 1em;
+        background-color: rgb(45, 45, 45);
+        z-index: 10;
+        display: none;
+        max-height: 9.5em;
+        overflow-y: hidden;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #Homebutton{
+        margin-top: 1em;
+    }
+    #Policybutton{
+        margin-bottom: 1em;
+    }
+    #main{
+        padding-top: 5em;
+    }
+    #main,#apply,.gallery{
+        width: 100%;
+    }
+    .whoarewepargraph > span{
+        font-size: 1.1em;
+    }
+    .headeron > a{
+        color: white;
+        font-size: 1.2em;
+        padding-bottom: 0.2em;
+        text-decoration-line: none;
+        font-family: 'Bebas Neue' ,sans-serif;
+    }
+    .gallery > img{
+        border-radius: 4em;
+        padding: 2em;
+    }
+    .gallerytxt{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 1.5em;
+        width: 75%;
+        text-align: start;
+    }
+    #apply{
+        padding-top: 4em;
+    }
+
+}
 /* Medium screen */
 @media (min-width: 992px)and (max-width:1280px) {
+    .navigation {
+        padding-bottom: 23.5em;
+        padding-right: 10em;
+    }
+    .sidebar>img {
+        left: 63.5%;
+    }
+    .gallery > img{
+        border-radius: 4em;
+        padding: 2em;
+    }
+    .gallerytxt{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 1.5em;
+        width: 75%;
+        text-align: start;
+    }
     .footercontent > .icons {
         width: 30%;
         font-size: 1rem;
@@ -475,11 +595,15 @@ body {
 
     #footer > .devs {
         padding-top: 2em;
-        margin: 0 0 0 90%;
+        margin: 0 0 0 89%;
     }
 }
 /*Large screen */
 @media (min-width:1280px) {
+    .navigation{
+        padding-bottom: 19.5em;
+        padding-right: 7em;
+    }
 }
 /* Very Large screen */
 @media (min-width:1537px) {

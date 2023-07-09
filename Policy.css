@@ -429,6 +429,55 @@ bug fix = handeeh z index bs hantala3 el divaya kolaha bta3et el dark
         display: none;
        }
 }
+/*Between medium*/
+@media (min-width:992px) and (max-width:1024px){
+    body{
+        border-width: 0em;
+    }
+    .sidebar {
+        display: none;
+    }
+    .menubar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+    }
+    .headeroff{
+        padding: 1em;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headeroff > img{
+        zoom: 0.3;
+    }
+    .headeron{
+        padding: 0 1em;
+        background-color: rgb(45, 45, 45);
+        z-index: 10;
+        display: none;
+        max-height: 9.5em;
+        overflow-y: hidden;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #Homebutton{
+        margin-top: 1em;
+    }
+    #Policybutton{
+        margin-bottom: 1em;
+    }
+.headeron > a{
+        color: white;
+        font-size: 1.2em;
+        padding-bottom: 0.2em;
+        text-decoration-line: none;
+        font-family: 'Bebas Neue' ,sans-serif;
+    }
+}   
 /* Medium screen */
 @media (min-width: 992px)and (max-width:1280px) {
     .footercontent > .icons {
@@ -439,11 +488,15 @@ bug fix = handeeh z index bs hantala3 el divaya kolaha bta3et el dark
 
     #footer > .devs {
         padding-top: 2em;
-        margin: 0 0 0 90%;
+        margin: 0 0 0 89%;
     }  
 }
 /*Large screen */
 @media (min-width:1280px) {
+    .navigation{
+        padding-bottom: 19.5em;
+        padding-right: 7em;
+    }
 }
 /* Very Large screen */
 @media (min-width:1537px) {
