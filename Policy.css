@@ -12,7 +12,8 @@ body {
     margin: 0px;
     border-style: solid;
     overflow-x: hidden;
-    border-color: black;
+    background: var(--primary-color);
+    /*border-color: var(--secondary-color);*/
     border-width: 2em 0 0 0;
     scroll-behavior: smooth;
 }
@@ -67,7 +68,7 @@ body {
 
     .navigation > a {
         padding-left: 2rem;
-        color: black;
+        color: var(--secondary-color);
         text-decoration-line: none;
        
     }
@@ -78,7 +79,7 @@ body {
     height: 3px;
     width: 0;
     border-radius: 5px;
-    background: black;
+    background: var(--secondary-color);
     transition: .6s;
 }
 .headeron > a::after{
@@ -98,14 +99,14 @@ body {
     display: block;
     height: 3px;
     width: 100%;
-    background: black;
+    background: var(--secondary-color);
   }
   .headeron > a.active::after{
     content: '';
     display: block;
     height: 3px;
     width: 100%;
-    background: white;
+    background: var(--primary-color);
   }
     .sidebar > img{
         position: absolute;
@@ -117,12 +118,47 @@ body {
    display:none;
   
 }
+/* 
+bug el zorar ta7t el footer 
+bug fix = handeeh z index bs hantala3 el divaya kolaha bta3et el dark
+ ashan hya goa side bar ely wakhed z index 4 fa howa ta7t el footer bardo
+
+ w smd ya ramy 
+ 
+.sidebar > .dark{
+    z-index: 6;
+}*/
+.sidebar > .dark > .circle{
+    height: 30px;
+    position: absolute;
+    width: 30px;
+    left: 39.5rem;
+    bottom: 10.5rem;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 50%;
+    border-color: var(--secondary-color);
+    cursor: pointer;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    transition: .5s ease-in-out;
+}
+.sidebar .dark .circle .fa-moon{
+    position: relative;
+    top: 22%;
+    left: 30%;
+}
+.sidebar > .dark > .circle:hover{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    
+}
 .main {
     width: 94%;
     padding-top: 2em;
     margin-bottom: 18vh;
     /* height: 75vh; */
-    background-color: white;
+    background-color: var(--primary-color);
     /*background-image: url("2crop.png");*/
     background-position: center;
     background-attachment: fixed;
@@ -174,6 +210,7 @@ body {
     padding-bottom: 2em;
     padding-left: 1em;
     padding-right: 1em;
+    color: var(--secondary-color);
     
 }
 /* .contentextra{
@@ -208,8 +245,8 @@ body {
     position: relative;
     z-index: 5;
     font-family: 'Poppins', sans-serif;
-    background: #000;
-    color: #fff;
+    background: black;
+    color: white;
 }
 
 .footercontent {
@@ -243,17 +280,17 @@ body {
     }
 
     .footercontent > .icons > .insta {
-        color: #fff;
+        color: white;
         text-decoration: none;
     }
 
     .footercontent > .icons > .envelope {
-        color: #fff;
+        color: white;
         text-decoration: none;
     }
 
     .footercontent > .icons > .fb {
-        color: #fff;
+        color: white;
         text-decoration: none;
     }
 
@@ -414,4 +451,18 @@ body {
         padding-top: 2em;
         margin: 0 0 0 94.6%;
     }
+}
+
+:root{
+    --primary-color:white;
+    --secondary-color:black;
+}
+.dark-theme{
+    --primary-color:black;
+    --secondary-color:white;
+}
+.fa-sun{
+    position: relative;
+    left: 23%;
+    top: 22%;
 }

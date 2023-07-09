@@ -340,3 +340,26 @@ menu.addEventListener('click',function(){
 
    window.addEventListener('scroll', setActiveNavLink);
  });
+
+
+ // dark theme code
+ var btn = document.getElementById("btn");
+    var icon = document.getElementById("iconid");
+
+    // Check if a stored theme exists
+    var storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "dark") {
+      document.body.classList.add("dark-theme");
+      icon.classList.replace("fa-moon", "fa-sun");
+    }
+
+    btn.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        icon.classList.replace("fa-moon", "fa-sun");
+        localStorage.setItem("theme", "dark"); // Store theme
+      } else {
+        icon.classList.replace("fa-sun", "fa-moon");
+        localStorage.removeItem("theme"); // Remove stored theme
+      }
+    };
