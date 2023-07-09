@@ -19,6 +19,31 @@ body {
 .policy{
     margin-top:3em;
 }
+.menubar{
+    display: none;
+}
+.headeronextra{
+    animation: displaydown 0.6s forwards;
+}
+.headeroffextra{
+    animation: displayup 0.2s forwards;
+}
+@keyframes displaydown {
+    0%{
+        height: 0em;
+    }
+    100%{
+        height: 9.5em;
+    }
+}
+@keyframes displayup {
+    0%{
+        height: 7em;
+    }
+    100%{
+        height: 0;
+    }
+}
 .sidebar {
     height: 100%;
     position: fixed;
@@ -46,25 +71,42 @@ body {
         text-decoration-line: none;
        
     }
-    .sidebar > .navigation > a::after{
-        content: ' ';
-        display: block;
-        height: 3px;
-        width: 0;
-        border-radius: 5px;
-        background: black;
-        transition: .8s;
-    }
-    .sidebar > .navigation > a:hover::after{
-        width: 100%;
-    }
-    .sidebar > .navigation > a.active::after {
-        content: '';
-        display: block;
-        height: 3px;
-        width: 100%;
-        background: black;
-      }
+    /* navbar hover style */
+.sidebar > .navigation > a::after{
+    content: ' ';
+    display: block;
+    height: 3px;
+    width: 0;
+    border-radius: 5px;
+    background: black;
+    transition: .6s;
+}
+.headeron > a::after{
+    content: ' ';
+    display: block;
+    height: 3px;
+    width: 0;
+    border-radius: 5px;
+    background: rgb(45, 45, 45);
+    transition: .6s;
+}
+.sidebar > .navigation > a:hover::after,.headeron > a:hover::after{
+    width: 100%;
+}
+.sidebar > .navigation > a.active::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: black;
+  }
+  .headeron > a.active::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: white;
+  }
     .sidebar > img{
         position: absolute;
         left: 63%;
@@ -230,6 +272,50 @@ body {
 /* Mobile */
 @media (max-width:767px) {
 
+    body{
+        border-width:0;
+    }
+    .menubar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+    }
+    .headeroff{
+        padding: 1em;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headeroff > img{
+        zoom: 0.3;
+    }
+    .headeron{
+        padding: 0 1em;
+        background-color: rgb(45, 45, 45);
+        z-index: 10;
+        display: none;
+        max-height: 9.5em;
+        overflow-y: hidden;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #Homebutton{
+        margin-top: 1em;
+    }
+    #Policybutton{
+        margin-bottom: 1em;
+    }
+    .headeron > a{
+        color: white;
+        font-size: 1.2em;
+        padding-bottom: 0.2em;
+        text-decoration-line: none;
+        font-family: 'Bebas Neue' ,sans-serif;
+    }
+
     .footercontent > .icons {
         width: 75%;
     }
@@ -241,9 +327,56 @@ body {
     .sidebar {
         display: none;
     }
+    ::-webkit-scrollbar {
+        display: none;
+       }
 }
 /* Small screen */
 @media (min-width:768px) and (max-width:991px) {
+    body{
+        border-width:0;
+        
+    }
+    .menubar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+    }
+    .headeroff{
+        padding: 1em;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headeroff > img{
+        zoom: 0.3;
+    }
+    .headeron{
+        padding: 0 1em;
+        background-color: rgb(45, 45, 45);
+        z-index: 10;
+        display: none;
+        max-height: 9.5em;
+        overflow-y: hidden;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #Homebutton{
+        margin-top: 1em;
+    }
+    #Policybutton{
+        margin-bottom: 1em;
+    }
+    .headeron > a{
+        color: white;
+        font-size: 1.2em;
+        padding-bottom: 0.2em;
+        text-decoration-line: none;
+        font-family: 'Bebas Neue' ,sans-serif;
+    }
     .footercontent > .icons {
         width: 75%;
     }
@@ -255,6 +388,9 @@ body {
     .sidebar {
         display: none;
     }
+    ::-webkit-scrollbar {
+        display: none;
+       }
 }
 /* Medium screen */
 @media (min-width: 992px)and (max-width:1280px) {

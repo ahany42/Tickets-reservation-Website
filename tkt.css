@@ -184,3 +184,13 @@ a{
         width:100%;
     }
 }
+/* Mobile */
+@media (max-width:767px) {
+    body{
+        height: fit-content;
+        margin-top: 20%;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+       }
+}
