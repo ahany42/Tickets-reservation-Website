@@ -363,3 +363,24 @@ menu.addEventListener('click',function(){
         localStorage.removeItem("theme"); // Remove stored theme
       }
     };
+    // dark theme code
+ var Rbtn = document.getElementById("Rbtn");
+ var Ricon = document.getElementById("Riconid");
+
+ // Check if a stored theme exists
+ var storedTheme = localStorage.getItem("theme");
+ if (storedTheme === "dark") {
+   document.body.classList.add("dark-theme");
+   Ricon.classList.replace("fa-moon", "fa-sun");
+ }
+
+ Rbtn.onclick = function () {
+   document.body.classList.toggle("dark-theme");
+   if (document.body.classList.contains("dark-theme")) {
+     Ricon.classList.replace("fa-moon", "fa-sun");
+     localStorage.setItem("theme", "dark"); // Store theme
+   } else {
+     Ricon.classList.replace("fa-sun", "fa-moon");
+     localStorage.removeItem("theme"); // Remove stored theme
+   }
+ };
