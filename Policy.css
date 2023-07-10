@@ -123,6 +123,7 @@ body > .dark{
     display: none;
 }
 body > .dark > .circle{
+    overflow-y: hidden;
     display: block;
     height: 30px;
     width: 30px;
@@ -327,8 +328,10 @@ body > .dark > .circle:hover{
 @media (max-width:767px) {
     body > .dark{
         display: block;
-        margin-top: 90vh;
+        /*margin-top: 90vh;*/
         margin-left: 3vw;
+        bottom:3%;
+        
         position: fixed;
         z-index: 20;
     }
@@ -405,8 +408,10 @@ body > .dark > .circle:hover{
 @media (min-width:768px) and (max-width:991px) {
     body > .dark{
         display: block;
-        margin-top: 90vh;
+        /*margin-top: 90vh;*/
         margin-left: 3vw;
+        bottom:3%;
+        
         position: fixed;
         z-index: 20;
     }
@@ -484,8 +489,10 @@ body > .dark > .circle:hover{
 @media (min-width:992px) and (max-width:1024px){
     body > .dark{
         display: block;
-        margin-top: 90vh;
+        /*margin-top: 90vh;*/
         margin-left: 3vw;
+        bottom:3%;
+        
         position: fixed;
         z-index: 20;
     }
