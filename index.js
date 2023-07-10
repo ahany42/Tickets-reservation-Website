@@ -97,7 +97,6 @@ for(var i =0;UpNames.length>i;++i){
         Upinfo[index].classList.add('infoextra');
         UpDate[index].classList.add("infoextra");
         if(window.matchMedia("(max-width:767px)").matches){
-            console.log("ana 4a8al");
             Uicons[index].classList.add("iconextra");
         }else if(window.matchMedia("(min-width:768px) and (max-width:991px)").matches){
             Uicons[index].classList.add("iconextra");

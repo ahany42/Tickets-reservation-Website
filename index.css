@@ -514,8 +514,27 @@ body > .dark > .circle:hover{
 
 /*Galaxy Fold and alike devices*/
 @media (max-width:300px) {
+    body > .dark{
+        display: block;
+        /*margin-top: 90vh;*/
+        margin-left: 3vw;
+        bottom:3%;
+        
+        position: fixed;
+        z-index: 20;
+    }
+    body > .dark >.circle{
+        height: 40px;
+        width: 40px;
+    }
+    .fa-moon::before{
+        font-size: 1.4em;
+    }
+    .fa-sun::before{
+        font-size: 1.4em;
+    }
     body {
-        width: fit-content;
+        width: 100vw;
     }
 
     .menubar {
@@ -557,7 +576,7 @@ body > .dark > .circle:hover{
         margin-bottom: 1em;
     }
     .headeron > a{
-        color: var(--primary-color);
+        color: white;
         font-size: 1.2em;
         padding-bottom: 0.2em;
         text-decoration-line: none;
@@ -575,6 +594,9 @@ body > .dark > .circle:hover{
     #video {
         width: 100%;
     }
+    #gallery > img{
+        width: 100vw;
+    }
 
     #desc {
         overflow-y: hidden;
@@ -585,7 +607,9 @@ body > .dark > .circle:hover{
     ::-webkit-scrollbar {
         display: none;
     }
-
+    .imagecontainer > span{
+        font-size: 0.4em;
+    }
     .eventcontainer {
         justify-content: space-around;
     }
@@ -645,14 +669,14 @@ body > .dark > .circle:hover{
         z-index: 20;
     }
     body > .dark >.circle{
-        height: 50px;
-        width: 50px;
+        height: 35px;
+        width: 35px;
     }
     .fa-moon::before{
-        font-size: 1.7em;
+        font-size: 1.2em;
     }
     .fa-sun::before{
-        font-size: 1.7em;
+        font-size: 1.2em;
     }
     .menubar {
         display: flex;
@@ -1038,7 +1062,6 @@ body > .dark > .circle:hover{
         font-size: 1rem;
         padding: 0.5em 0;
     }
-
     #footer>.devs {
         padding-top: 2em;
         margin: 0 0 0 89%;

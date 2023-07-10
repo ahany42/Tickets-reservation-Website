@@ -336,14 +336,14 @@ body > .dark > .circle:hover{
         z-index: 20;
     }
     body > .dark >.circle{
-        height: 50px;
-        width: 50px;
+        height: 35px;
+        width: 35px;
     }
     .fa-moon::before{
-        font-size: 1.7em;
+        font-size: 1.2em;
     }
     .fa-sun::before{
-        font-size: 1.7em;
+        font-size: 1.2em;
     }
     body{
         border-width:0;

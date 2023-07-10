@@ -369,14 +369,14 @@ body > .dark > .circle{
         z-index: 20;
     }
     body > .dark >.circle{
-        height: 50px;
-        width: 50px;
+        height: 35px;
+        width: 35px;
     }
     .fa-moon::before{
-        font-size: 1.7em;
+        font-size: 1.2em;
     }
     .fa-sun::before{
-        font-size: 1.7em;
+        font-size: 1.2em;
     }
     .menubar{
         display: flex;
@@ -647,16 +647,27 @@ body > .dark{
     #apply{
         padding-top: 4em;
     }
+    .whoarewepargraph{
+        display: block !important;
+    }
 
 }
 /* Medium screen */
 @media (min-width: 992px)and (max-width:1280px) {
+    .sidebar{
+        z-index: 20;
+    }
     .navigation {
         padding-bottom: 23.5em;
         padding-right: 10em;
+        z-index: 20;
     }
     .sidebar>img {
         left: 63.5%;
+    }
+    .whoarewepargraph{
+        display: flex;
+        flex-direction: column;
     }
     .gallery > img{
         border-radius: 4em;
@@ -681,7 +692,7 @@ body > .dark{
     }
     .sidebar > .dark > .circle{
         left: 46.25rem;
-        bottom: 14.5rem;
+        bottom: 13.5rem;
     }
     .navigation{
         padding-bottom: 22.5em ;
@@ -689,18 +700,33 @@ body > .dark{
     }
 }
 /*Large screen */
-@media (min-width:1280px) and (max-width:1536px) {
+@media (min-width:1281px) and (max-width:1536px) {
+    .sidebar{
+        z-index: 20;
+    }
     .navigation{
         padding-bottom: 19.5em;
         padding-right: 7em;
     }
     .sidebar > .dark > .circle{
         left: 41.25rem;
-        bottom: 11.25rem;
+        bottom: 9.5rem;
+    }
+    .whoarewepargraph{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer > .devs {
+        padding-top: 2em;
+        margin: 0 0 0 90%;
     }
 }
 /* Very Large screen */
 @media (min-width:1537px) {
+    .whoarewepargraph{
+        display: flex;
+        flex-direction: column;
+    }
     #footer > .devs {
         padding-top: 2em;
         margin: 0 0 0 94.6%;
