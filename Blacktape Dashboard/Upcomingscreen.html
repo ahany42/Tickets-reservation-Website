@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Home screen</title>
+    <link rel="stylesheet" href="Upcomingscreen.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div class="logosec">
+            <div class="logo"><img src="2crop23.png">  </div>
+            <!-- <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+                 class="icn menuicn"
+                 id="menuicn"
+                 alt="menu-icon"> -->
+        </div>
+
+
+
+
+    </header>
+    <div class="main-container">
+
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <a href="Homescreen.html"><div class="nav-option option1">
+                        <h3> Home Screen</h3>
+                    </div></a>
+
+                    <div class="option2 nav-option">
+
+                        <h3> Upcoming Events</h3>
+                    </div>
+
+                    <div class="nav-option option3">
+
+                        <h3> Past Events</h3>
+                    </div>
+
+                    <div class="nav-option option4">
+
+                        <h3> Policy</h3>
+                    </div>
+
+                    <div class="nav-option option5">
+
+                        <h3> Programs</h3>
+                    </div>
+                    <div class="nav-option option6">
+
+                        <h3> Tickets</h3>
+                    </div>
+
+                    <div class="nav-option logout">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+                             class="nav-img"
+                             alt="logout">
+                        <h3>Logout</h3>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="report-container">
+                <div class="Title">Upcoming Events</div>
+                <div class="options">
+                    <button class="change" id="add">Add</button>
+                    <button class="change" id="delete">Delete</button>
+                    <button class="change" id="edit">Edit</button>
+                </div>
+                <div class="Addform form" id="Addform">
+                    <div class="input-box">
+                        <span class="details">Event Name</span>
+                        <input type="text" id="Ename" placeholder="Enter Event name" >
+                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Event Description</span>
+                        <textarea id="Desc" placeholder="Enter Event Description" style="width: 100%; height: 15vh;"></textarea>
+                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Write some description</span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Event Date</span>
+                        <input type="date" id="date" placeholder="Enter Event date" required>
+                        <span class="warning" id="warningdate"><i class="fa fa-light fa-circle-exclamation"></i>Enter a vaild date.</span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Event Cover</span>
+                        <input type="file" id="eventcover">
+                        <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Upload Event Cover</span>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- <div class="mainlogo">
+                <img src="2.png" />
+            </div> -->
+        </div>
+    </div>
+    <script src="Upcomingscreen.js"></script>
+</body>
+</html>
