@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
-    <title>Upcoming:admin</title>
+    <title>Ticket:admin</title>
     <link rel="stylesheet" href="Ticketscreen.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
 
         <div class="logosec">
-            <div class="logo"><img src="2crop23.png">  </div>
+            <div class="logo"><img src="2crop23.png"> </div>
             <!-- <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
                  class="icn menuicn"
                  id="menuicn"
@@ -33,10 +38,10 @@
                         </div>
                     </a>
                     <a href="Upcomingscreen.html">
-                    <div class="option2 nav-option">
+                        <div class="option2 nav-option">
 
-                        <h3> Upcoming Events</h3>
-                    </div>
+                            <h3> Upcoming Events</h3>
+                        </div>
                     </a>
 
                     <a href="Pastscreen.html">
@@ -55,22 +60,20 @@
 
                     <a href="Programsscreen.html">
 
-                    <div class="nav-option option5">
+                        <div class="nav-option option5">
 
-                        <h3> Programs</h3>
-                    </div>
+                            <h3> Programs</h3>
+                        </div>
                     </a>
-                    
+
                     <div class="nav-option option6">
 
                         <h3> Tickets</h3>
                     </div>
-                    
+
 
                     <div class="nav-option logout">
-                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
-                             class="nav-img"
-                             alt="logout">
+                        <i class="fa-solid fa-right-from-bracket fa-rotate-180" alt="logout"></i>
                         <h3>Logout</h3>
                     </div>
 
@@ -80,10 +83,58 @@
         <div class="main">
             <div class="report-container">
                 <div class="Title">Tickets</div>
+                <div class="eventname">
+                    <div class="input-box">
+                        <span class="details">Event Name</span>
+                        <select name="events" id="events">
+                            <option value="">Name</option>
+                            <option value="">Name</option>
+                            <option value="">Name</option>
+                        </select>
+                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter
+                            a name</span>
+                    </div>
+                </div>
+                
+
+                        <div class="eventcontainer">
+                            <h1>Pending</h1>
+                            <div class="pending">
+                                <div class="container-user">
+                                    <div class="info">
+                                        <span class="username">Name</span>
+                                        <div id="moreinfo" class="moreinfo"><span>More Info</span> <i class="fa-solid fa-angles-down"></i></div>
+                                        <div class="marks-container">
+                                            <span class="circle-reject"><span>Reject</span><i class="fa-solid fa-xmark"></i></span>
+                                            <span class="circle-accept"><span>Accept</span><i class="fa-solid fa-check"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div id="expandinfo" class="expandinfo">
+                                        <div class="esm"> First Name:</div>
+                                        <div class="esm">Last name:</div>
+                                        <div class="esm">Email:</div>
+                                        <div class="esm">Number:</div>
+                                        <div class="esm">Date:</div>
+                                        <div class="esm">Gender:</div>
+                                        <div class="esm">ID:</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="accepted"></div>
+                            <div class="rejected"></div>
+                        </div>
+                       
+                
+            </div>
+
+                <!--
+                <h2> Event Name</h2>
                 <div class="options">
-                    <button class="change" id="add">Add</button>
-                    <button class="change" id="delete">Delete</button>
-                    <button class="change" id="edit">Edit</button>
+                    <button class="change" id="add">Pending</button>
+                    <button class="change" id="delete">Accepted</button>
+                    <button class="change" id="edit">Rejected</button>
                 </div>
                 <div class="Addform form" id="Addform">
                     <div class="input-box">
@@ -147,13 +198,14 @@
                     </div>
                     <button class="finalbutton">Edit</button>
                 </div>
-            </div>
-        
-            <!-- <div class="mainlogo">
+            </div>-->
+
+                <!-- <div class="mainlogo">
                 <img src="2.png" />
             </div> -->
+            </div>
         </div>
-    </div>
-    <script src="Upcomingscreen.js"></script>
+        <script src="Script1.js"></script>
 </body>
+
 </html>
