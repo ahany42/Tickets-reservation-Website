@@ -279,11 +279,11 @@ input[type='date']{
     transform: scale(1.1);
 
 }
-.Deleteform > .input-box,.Editform > .input-box{
+.Deleteform > .input-box,.Editform > .input-box,.Addform > .input-box{
     display: flex;
     flex-direction: column;
 }
-#events{
+#events,#pictures{
     font-size: 1.2em;
     border-radius: 0.2em;
 }

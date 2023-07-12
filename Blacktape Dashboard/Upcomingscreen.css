@@ -288,7 +288,7 @@ input[type='date']{
     border-radius: 0.2em;
 }
 /* Responsive CSS Here */
-@media screen and (max-width: 950px) {
+@media /* screen and  */(max-width: 950px) {
     ::-webkit-file-upload-button{
         width: 45%;
     }
@@ -309,9 +309,10 @@ input[type='date']{
     .items {
         width: 800px;
     }
+    
 }
 
-@media screen and (max-width: 850px) {
+@media /* screen and  */(max-width: 850px) {
     .nav-img {
         height: 30px;
     }
@@ -373,7 +374,7 @@ input[type='date']{
         }
 }
 
-@media screen and (max-width: 490px) {
+@media /* screen and  */(max-width: 490px) {
     ::-webkit-file-upload-button{
         width: 70%;
     }
@@ -419,7 +420,7 @@ input[type='date']{
     }
 }
 
-@media screen and (max-width: 400px) {
+@media /* screen and  */(max-width: 400px) {
     .recent-Articles {
         font-size: 17px;
     }
@@ -440,7 +441,7 @@ input[type='date']{
     }
 }
 
-@media screen and (max-width: 320px) {
+@media /* screen and  */(max-width: 320px) {
     .recent-Articles {
         font-size: 12px;
     }
