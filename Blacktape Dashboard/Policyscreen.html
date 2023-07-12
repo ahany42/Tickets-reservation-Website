@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Upcoming:admin</title>
-    <link rel="stylesheet" href="Upcomingscreen.css">
+    <link rel="stylesheet" href="Policyscreen.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -32,11 +32,13 @@
                             <h3> Home Screen</h3>
                         </div>
                     </a>
+                    <a href="Upcomingscreen.html">
 
-                    <div class="option2 nav-option">
+                        <div class="option2 nav-option">
 
-                        <h3> Upcoming Events</h3>
-                    </div>
+                           <h3> Upcoming Events</h3>
+                        </div>
+                    </a>
 
                     <a href="Pastscreen.html">
                         <div class="nav-option option3">
@@ -45,15 +47,13 @@
                         </div>
                     </a>
 
-                    <a href="Policyscreen.html">
+                    
                         <div class="nav-option option4">
 
                             <h3> Policy</h3>
                         </div>
-                    </a>
-
-                    <a href="Programsscreen.html">
-
+                    
+                        <a href="Programsscreen.html">
                     <div class="nav-option option5">
 
                         <h3> Programs</h3>
@@ -78,7 +78,7 @@
         </div>
         <div class="main">
             <div class="report-container">
-                <div class="Title">Upcoming Events</div>
+                <div class="Title">Policy</div>
                 <div class="options">
                     <button class="change" id="add">Add</button>
                     <button class="change" id="delete">Delete</button>
@@ -86,71 +86,47 @@
                 </div>
                 <div class="Addform form" id="Addform">
                     <div class="input-box">
-                        <span class="details">Event Name</span>
-                        <input type="text" id="Ename" placeholder="Enter Event name" >
-                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
+                        <span class="details">Title</span>
+                        <input type="text" id="Ename" placeholder="Enter Title">
+                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a title</span>
                     </div>
                     <div class="input-box">
-                        <span class="details">Event Description</span>
-                        <textarea id="Desc" placeholder="Enter Event Description" style="width: 100%; height: 15vh;"></textarea>
+                        <span class="details">Policy description</span>
+                        <textarea id="Desc" placeholder="Enter Policy Description" style="width: 100%; height: 15vh;"></textarea>
                         <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Write some description</span>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Event Date</span>
-                        <input type="date" id="date" placeholder="Enter Event date" required>
-                        <span class="warning" id="warningdate"><i class="fa fa-light fa-circle-exclamation"></i>Enter a vaild date.</span>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Event Cover</span>
-                        <input type="file" id="eventcover">
-                        <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Upload Event Cover</span>
                     </div>
                     <button class="finalbutton">Add</button>
                 </div>
                 <div class="Deleteform form" id="Deleteform">
                     <div class="input-box">
-                        <span class="details">Event Name</span>
+                        <span class="details">Policy Title</span>
                         <select name="events" id="events">
-                            <option value="">Name</option>
-                            <option value="">Name</option>
-                            <option value="">Name</option>
-                          </select>
-                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
+                            <option value="">Title</option>
+                            <option value="">Title</option>
+                            <option value="">Title</option>
+                        </select>
+                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a title</span>
                     </div>
                     <button class="finalbutton">Delete</button>
                 </div>
                 <div class="Editform form" id="Editform">
                     <div class="input-box">
-                        <span class="details">Event Name</span>
+                        <span class="details">Policy Title</span>
                         <select name="events" id="events">
-                            <option value="">Name</option>
-                            <option value="">Name</option>
-                            <option value="">Name</option>
-                          </select>
-                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
+                            <option value="">Title</option>
+                            <option value="">Title</option>
+                            <option value="">Title</option>
+                        </select>
+                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a title</span>
                     </div>
                     <div class="input-box">
-                        <span class="details">Event Description</span>
-                        <textarea id="Desc" placeholder="Enter Event Description" style="width: 100%; height: 15vh;"></textarea>
+                        <span class="details">Policy Description</span>
+                        <textarea id="Desc" placeholder="Enter Policy Description" style="width: 100%; height: 15vh;"></textarea>
                         <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Write some description</span>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Event Date</span>
-                        <input type="date" id="date" placeholder="Enter Event date" required>
-                        <span class="warning" id="warningdate"><i class="fa fa-light fa-circle-exclamation"></i>Enter a vaild date.</span>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Event Cover</span>
-                        <input type="file" id="eventcover">
-                        <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Upload Event Cover</span>
                     </div>
                     <button class="finalbutton">Edit</button>
                 </div>
             </div>
-        
-            <!-- <div class="mainlogo">
-                <img src="2.png" />
-            </div> -->
         </div>
     </div>
     <script src="Upcomingscreen.js"></script>
