@@ -198,7 +198,7 @@ a{
     width: 35%;
     /* min-width: 10em;
     max-width: 20em; */
-    margin-right: 4.5em;
+    margin-right: 1.5em;
     height: 100%;
 }
 input{
@@ -285,7 +285,7 @@ input[type='date']{
     border-radius: 0.2em;
 }
 /* Responsive CSS Here */
-@media screen and (max-width: 950px) {
+@media /* screen and  */(max-width: 950px) {
     ::-webkit-file-upload-button{
         width: 45%;
     }
@@ -306,9 +306,13 @@ input[type='date']{
     .items {
         width: 800px;
     }
+    
 }
 
-@media screen and (max-width: 850px) {
+@media /* screen and  */(max-width: 850px) {
+    .input-box{
+        width: 100%;
+    }
     .nav-img {
         height: 30px;
     }
@@ -370,7 +374,7 @@ input[type='date']{
         }
 }
 
-@media screen and (max-width: 490px) {
+@media /* screen and  */(max-width: 490px) {
     ::-webkit-file-upload-button{
         width: 70%;
     }
@@ -416,7 +420,7 @@ input[type='date']{
     }
 }
 
-@media screen and (max-width: 400px) {
+@media /* screen and  */(max-width: 400px) {
     .recent-Articles {
         font-size: 17px;
     }
@@ -437,7 +441,7 @@ input[type='date']{
     }
 }
 
-@media screen and (max-width: 320px) {
+@media /* screen and  */(max-width: 320px) {
     .recent-Articles {
         font-size: 12px;
     }

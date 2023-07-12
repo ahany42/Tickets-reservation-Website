@@ -198,7 +198,7 @@ a{
     width: 35%;
     /* min-width: 10em;
     max-width: 20em; */
-    margin-right: 4.5em;
+    margin-right: 1.5em;
     height: 100%;
 }
 input{
@@ -276,11 +276,11 @@ input[type='date']{
     transform: scale(1.1);
 
 }
-.Deleteform > .input-box,.Editform > .input-box{
+.Deleteform > .input-box,.Editform > .input-box,.Addform > .input-box{
     display: flex;
     flex-direction: column;
 }
-#events{
+#events,#pictures{
     font-size: 1.2em;
     border-radius: 0.2em;
 }
@@ -309,6 +309,9 @@ input[type='date']{
 }
 
 @media screen and (max-width: 850px) {
+    .input-box{
+        width: 100%;
+    }
     .nav-img {
         height: 30px;
     }

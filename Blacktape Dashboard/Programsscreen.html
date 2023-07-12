@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upcoming:admin</title>
     <link rel="stylesheet" href="Programsscreen.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -87,30 +88,61 @@
                 </div>
                 <div class="Addform form" id="Addform">
                     <div class="input-box">
-                        <span class="details">Event Name</span>
+                        <span class="details">Program Name</span>
                         <input type="text" id="Ename" placeholder="Enter Event name" >
                         <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
                     </div>
                     <div class="input-box">
-                        <span class="details">Event Description</span>
+                        <span class="details">Program Description</span>
                         <textarea id="Desc" placeholder="Enter Event Description" style="width: 100%; height: 15vh;"></textarea>
                         <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Write some description</span>
                     </div>
                     <div class="input-box">
-                        <span class="details">Event Date</span>
-                        <input type="date" id="date" placeholder="Enter Event date" required>
-                        <span class="warning" id="warningdate"><i class="fa fa-light fa-circle-exclamation"></i>Enter a vaild date.</span>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Event Cover</span>
+                        <span class="details">Program Logo</span>
                         <input type="file" id="eventcover">
                         <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Upload Event Cover</span>
                     </div>
-                    <button class="finalbutton">Add</button>
+                    <div class="input-box">
+                        <span class="details">How many pictures do you want to add?</span>
+                        <select name="pictures" id="nopictures">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Choose No. of pictures</span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Upload Picture Number</span>
+                        <select name="picture" id="picture">
+                            <!-- <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option> -->
+                        </select>
+                        <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Choose No. of pictures</span>
+                    </div>
+                    <div class="AddPicture" id="addpicture">
+                        <div class="input-box">
+                            <span class="details">Picture</span>
+                            <input type="file" id="eventcover">
+                            <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Upload Event Cover</span>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Picture Description</span>
+                            <textarea id="Desc" placeholder="Enter Event Description" style="width: 100%; height: 15vh;"></textarea>
+                            <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Write some description</span>
+                        </div>
+                    </div>
+                    <button class="finalbutton" id="addbutton">Add</button>
                 </div>
                 <div class="Deleteform form" id="Deleteform">
                     <div class="input-box">
-                        <span class="details">Event Name</span>
+                        <span class="details">Program Name</span>
                         <select name="events" id="events">
                             <option value="">Name</option>
                             <option value="">Name</option>
@@ -122,28 +154,52 @@
                 </div>
                 <div class="Editform form" id="Editform">
                     <div class="input-box">
-                        <span class="details">Event Name</span>
-                        <select name="events" id="events">
-                            <option value="">Name</option>
-                            <option value="">Name</option>
-                            <option value="">Name</option>
+                        <span class="details">Program Name</span>
+                        <select name="events" id="events" class="Editprograms">
+                            <option value="Name">Name</option>
+                            <option value="Name">Name</option>
+                            <option value="Name">Name</option>
                           </select>
                         <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
                     </div>
                     <div class="input-box">
-                        <span class="details">Event Description</span>
+                        <span class="details">Program Name</span>
+                        <input type="text" id="Ename" value="" placeholder="" class="programname" >
+                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Program Description</span>
                         <textarea id="Desc" placeholder="Enter Event Description" style="width: 100%; height: 15vh;"></textarea>
                         <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Write some description</span>
                     </div>
                     <div class="input-box">
-                        <span class="details">Event Date</span>
-                        <input type="date" id="date" placeholder="Enter Event date" required>
-                        <span class="warning" id="warningdate"><i class="fa fa-light fa-circle-exclamation"></i>Enter a vaild date.</span>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Event Cover</span>
+                        <span class="details">Program Logo</span>
                         <input type="file" id="eventcover">
                         <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Upload Event Cover</span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Picture Number</span>
+                        <select name="picture" id="picture">
+                            <!-- <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option> -->
+                        </select>
+                        <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Choose No. of pictures</span>
+                    </div>
+                    <div class="AddPicture" id="addpicture">
+                        <div class="input-box">
+                            <span class="details">Picture</span>
+                            <input type="file" id="eventcover">
+                            <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Upload Event Cover</span>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Picture Description</span>
+                            <textarea id="Desc" placeholder="Enter Event Description" style="width: 100%; height: 15vh;"></textarea>
+                            <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Write some description</span>
+                        </div>
                     </div>
                     <button class="finalbutton">Edit</button>
                 </div>
@@ -154,6 +210,6 @@
             </div> -->
         </div>
     </div>
-    <script src="Upcomingscreen.js"></script>
+    <script src="Programsscreen.js"></script>
 </body>
 </html>

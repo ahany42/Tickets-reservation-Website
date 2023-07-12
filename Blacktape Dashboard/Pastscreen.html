@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Past Events:ad</title>
     <link rel="stylesheet" href="Pastscreen.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -115,7 +116,7 @@
                             <option value="">Name</option>
                             <option value="">Name</option>
                             <option value="">Name</option>
-                          </select>
+                        </select>
                         <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
                     </div>
                     <button class="finalbutton">Delete</button>
@@ -123,11 +124,16 @@
                 <div class="Editform form" id="Editform">
                     <div class="input-box">
                         <span class="details">Event Name</span>
-                        <select name="events" id="events">
-                            <option value="">Name</option>
-                            <option value="">Name</option>
-                            <option value="">Name</option>
+                        <select name="events" id="events" class="EditEvent">
+                            <option value="Name">Name</option>
+                            <option value="Name">Name</option>
+                            <option value="Name">Name</option>
                           </select>
+                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Event Name</span>
+                        <input type="text" id="Ename" value="" placeholder="" class="programname" >
                         <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
                     </div>
                     <div class="input-box">
