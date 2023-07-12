@@ -201,7 +201,7 @@ a{
     width: 35%;
     /* min-width: 10em;
     max-width: 20em; */
-    margin-right: 4.5em;
+    margin-right: 1.5em;
     height: 100%;
 }
 input{
@@ -312,6 +312,9 @@ input[type='date']{
 }
 
 @media screen and (max-width: 850px) {
+    .input-box{
+        width: 100%;
+    }
     .nav-img {
         height: 30px;
     }
