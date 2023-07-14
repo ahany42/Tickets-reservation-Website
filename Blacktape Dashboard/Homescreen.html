@@ -78,19 +78,80 @@
             </nav>
         </div>
         <div class="main">
-            <div class="report-container">
+            <div class="report-container" id="report-container">
                 <div class="Title">Change Logo</div>
                 <input type="file">
                 <button class="change">Change</button>
                 <div class="Title">Change Video</div>
                 <input type="file">
                 <button class="change">Change</button>
-            </div>
+                <div class="Title">Gallery</div>
+                <div class="options">
+                    <button class="change" id="add">Add</button>
+                    <button class="change" id="edit">Edit</button>
+                </div>
+                <div class="Addform form" id="Addform">
+                    <div class="input-box">
+                        <span class="details">How many pictures do you want to add?</span>
+                        <select name="pictures" id="nopictures">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Choose No. of pictures</span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Upload Picture Number</span>
+                        <select name="picture" id="picture">
+                            <!-- <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option> -->
+                        </select>
+                        <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Choose No. of pictures</span>
+                    </div>
+                    <div class="AddPicture" id="addpicture">
+                        <div class="input-box">
+                            <span class="details">Picture</span>
+                            <input type="file" id="eventcover">
+                            <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Upload Event Cover</span>
+                        </div>
+                    </div>
+                    <button class="finalbutton" id="addbutton">Add</button>
+                </div>
+                <div class="Editform form" id="Editform">
+                    <div class="input-box">
+                        <span class="details">Picture Number</span>
+                        <select name="picture" id="picture">
+                            <!-- <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option> -->
+                        </select>
+                        <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Choose No. of pictures</span>
+                    </div>
+                    <div class="AddPicture" id="addpicture">
+                        <div class="input-box">
+                            <span class="details">Picture</span>
+                            <input type="file" id="eventcover">
+                            <span class="warning" id="warningid"><i class="fa fa-light fa-circle-exclamation"></i>Upload Event Cover</span>
+                        </div>
+                    </div>
+                    <button class="finalbutton">Edit</button>
+                </div>
         
             <!-- <div class="mainlogo">
                 <img src="2.png" />
             </div> -->
         </div>
     </div>
+    <script src="Homescreen.js"></script>
 </body>
 </html>

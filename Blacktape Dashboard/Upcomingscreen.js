@@ -62,3 +62,47 @@ eventbutton[0].addEventListener('change',function(){
     var programname = document.getElementsByClassName("programname");
     programname[0].value=eventbutton[0].value;
 })
+//validation addform name
+var Awarningname = document.getElementById("Awarningname");
+var Ainputname = document.getElementById("Aname");
+Ainputname.addEventListener('input',function(){
+    var length = this.value.length;
+    if(length==17){
+        Awarningname.style.display= "block";
+    }else{
+        Awarningname.style.display ="";
+    }
+})
+//validation addform description
+var Awarningdesc = document.getElementById("Awarningdesc");
+var Ainputdesc = document.getElementById("ADesc");
+Ainputdesc.addEventListener('input',function(){
+    var length = this.value.length;
+    if(length==151){
+        Awarningdesc.style.display= "block";
+    }else{
+        Awarningdesc.style.display ="";
+    }
+})
+//validation editform name
+var Ewarningname = document.getElementById("Ewarningname");
+var Einputname = document.getElementById("Ename");
+Einputname.addEventListener('input',function(){
+    var length = this.value.length;
+    if(length==17){
+        Ewarningname.style.display= "block";
+    }else{
+        Ewarningname.style.display ="";
+    }
+})
+//validation editform description
+var Ewarningdesc = document.getElementById("Ewarningdesc");
+var Einputdesc = document.getElementById("EDesc");
+Einputdesc.addEventListener('input',function(){
+    var length = this.value.length;
+    if(length==151){
+        Ewarningdesc.style.display= "block";
+    }else{
+        Ewarningdesc.style.display ="";
+    }
+})

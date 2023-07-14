@@ -15,7 +15,7 @@ header {
     height: 70px;
     width: 100vw;
     padding: 0 30px;
-    background-color: var(--background-color1);
+    background-color: white;
     position: fixed;
     z-index: 100;
     box-shadow: 1px 1px 15px rgba(161, 182, 253, 0.825);
@@ -148,7 +148,7 @@ a{
         background-color: rgb(76, 75, 75);
     }
     .main {
-        height: calc(100vh - 70px);
+        height: fit-content;
         width: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
@@ -197,8 +197,11 @@ a{
     width: 15%;
     /* min-width: 10em;
     max-width: 20em; */
-    margin-right: 4.5em;
+    margin-right: 1.5em;
     height: 100%;
+}
+.input-box > ::-webkit-file-upload-button{
+    width: 35%;
 }
 input{
     width: 100%;
@@ -208,8 +211,78 @@ input{
 .change{
     width: 10em;
     border-radius: 0.5em;
+    margin: 2em 0;
     font-size: 1em;
     max-width: 7em;
+}
+.input-box{
+    margin-bottom: 15px;
+    width: calc(100%/ 2 - 20px);
+}
+.input-box > ,details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.input-box >input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+}
+.warning{
+    color: red;
+    display: none;
+    padding-top: 0.5em;
+}
+.warning > i{
+    padding-right: 0.5em;
+}
+.Addform,.Deleteform,.Editform{
+    display: none;
+    padding: 2em 0;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+
+#Desc{
+    padding: 0.5em;
+    width: 100%;
+    min-height: 3em;
+}
+input[type='date']{
+    padding-right: 0.5em;
+}
+#eventcover{
+    padding-left: 0;
+    border: 0;
+}
+.finalbutton{
+    background-color: white;
+    color: black;
+    font-family: 'Bebas Neue' ,sans-serif;
+    width: 5em;
+    font-size: 1.5em;
+    border-radius: 0.5em;
+    transition: 0.6s;
+}
+.finalbutton:hover{
+    transform: scale(1.1);
+
+}
+.Deleteform > .input-box,.Editform > .input-box,.Addform > .input-box{
+    display: flex;
+    flex-direction: column;
+}
+#events,#pictures{
+    font-size: 1.2em;
+    border-radius: 0.2em;
 }
 /* Responsive CSS Here */
 @media screen and (max-width: 950px) {
