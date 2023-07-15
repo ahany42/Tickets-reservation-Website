@@ -290,12 +290,12 @@ input[type='date']{
         left: -100vw;
     }
     100%{
-        left: -1vw;
+        left: -3vw;
     }
 }
 @keyframes close{
     0%{
-        left: -1vw;
+        left: -3vw;
     }
     100%{
         left: -100vw;
