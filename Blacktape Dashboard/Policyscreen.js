@@ -106,3 +106,15 @@ Einputdesc.addEventListener('input',function(){
         Ewarningdesc.style.display ="";
     }
 })
+//menubar click
+var menubar = document.getElementById("bar");
+var navcontainer = document.getElementsByClassName("navcontainer");
+menubar.addEventListener('click',function(){
+    if(navcontainer[0].classList.contains("navbaropenextra")){
+        navcontainer[0].classList.add("navbarcloseextra");
+        navcontainer[0].classList.remove("navbaropenextra");
+    }else{
+        navcontainer[0].classList.add("navbaropenextra");
+        navcontainer[0].classList.remove("navbarcloseextra");
+    }
+})

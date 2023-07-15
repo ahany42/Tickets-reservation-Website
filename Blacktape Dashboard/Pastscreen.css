@@ -23,7 +23,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+#bar{
+    display: none;
+}
 .logo > img {
     width: 7em;
 }
@@ -283,8 +285,33 @@ input[type='date']{
     font-size: 1.2em;
     border-radius: 0.2em;
 }
+@keyframes open {
+    0%{
+        left: -100vw;
+    }
+    100%{
+        left: -1vw;
+    }
+}
+@keyframes close{
+    0%{
+        left: -1vw;
+    }
+    100%{
+        left: -100vw;
+    }
+}
+.navbaropenextra{
+    animation: open 0.8s forwards;
+}
+.navbarcloseextra{
+    animation: close 0.6s forwards;
+}
 /* Responsive CSS Here */
 @media screen and (max-width: 950px) {
+    #bar{
+        display: block;
+    }
     ::-webkit-file-upload-button{
         width: 45%;
     }
@@ -297,7 +324,7 @@ input[type='date']{
     }
 
         .nav-option h3 {
-            font-size: 15px;
+            font-size: 18px;
         }
 
     .report-topic-heading,
@@ -308,6 +335,9 @@ input[type='date']{
 }
 
 @media screen and (max-width: 850px) {
+    .input-box{
+        width: 100%;
+    }
     .nav-img {
         height: 30px;
     }
@@ -335,7 +365,8 @@ input[type='date']{
     }
 
     .nav {
-        width: 100%;
+        width: fit-content;
+        background-color: white;
         position: absolute;
     }
 
@@ -397,7 +428,7 @@ input[type='date']{
     }
 
         .nav-option h3 {
-            font-size: 12px;
+            font-size: 20px;
         }
 
     .nav-upper-options {

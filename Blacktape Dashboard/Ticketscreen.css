@@ -25,7 +25,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+#bar{
+    display: none;
+}
 .logo>img {
     width: 7em;
 }
@@ -524,8 +526,33 @@ i.fa-solid.fa-check {
       justify-content: space-between;
       align-items: center;
   }
+  @keyframes open {
+    0%{
+        left: -100vw;
+    }
+    100%{
+        left: -1vw;
+    }
+}
+@keyframes close{
+    0%{
+        left: -1vw;
+    }
+    100%{
+        left: -100vw;
+    }
+}
+.navbaropenextra{
+    animation: open 0.8s forwards;
+}
+.navbarcloseextra{
+    animation: close 0.6s forwards;
+}
 /* Responsive CSS Here */
 @media screen and (max-width: 950px) {
+    #bar{
+        display: block;
+    }
     ::-webkit-file-upload-button {
         width: 45%;
     }
@@ -539,7 +566,7 @@ i.fa-solid.fa-check {
     }
 
     .nav-option h3 {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .report-topic-heading,
@@ -577,7 +604,8 @@ i.fa-solid.fa-check {
     }
 
     .nav {
-        width: 100%;
+        width: fit-content;
+        background-color: white;
         position: absolute;
     }
 
@@ -612,6 +640,32 @@ i.fa-solid.fa-check {
 }
 
 @media screen and (max-width: 490px) {
+    .eventcontainer{
+        width: 100%;
+    }
+    .moreinfospan,
+    .pending > .container-user > .info > .marks-container > .circle-accept > .acceptspan,
+    .pending > .container-user > .info > .marks-container > .circle-reject > .rejectspan{
+        display: none;
+    }
+    .circle-accept,.circle-reject{
+        width: 4em;
+    }
+    .accepted > .container-user > .info > .marks-container > .circle-reject,.rejected > .container-user > .info > .marks-container > .circle-accept{
+        width: 11em;
+    }
+    i.fa-solid.fa-xmark {
+
+        padding-left: 0;
+    }
+    
+    i.fa-solid.fa-check {
+        padding-left: 0;
+    }
+    .accepted > .container-user > .info > .marks-container > .circle-reject > .rejectspan,
+    .rejected > .container-user > .info > .marks-container > .circle-accept > .acceptspan{
+        padding-right: 0.4em;
+    }
     ::-webkit-file-upload-button {
         width: 70%;
     }
@@ -640,7 +694,7 @@ i.fa-solid.fa-check {
     }
 
     .nav-option h3 {
-        font-size: 12px;
+        font-size: 20px;
     }
 
     .nav-upper-options {

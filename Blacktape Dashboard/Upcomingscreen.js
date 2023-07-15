@@ -1,3 +1,15 @@
+//menubar click
+var menubar = document.getElementById("bar");
+var navcontainer = document.getElementsByClassName("navcontainer");
+menubar.addEventListener('click',function(){
+    if(navcontainer[0].classList.contains("navbaropenextra")){
+        navcontainer[0].classList.add("navbarcloseextra");
+        navcontainer[0].classList.remove("navbaropenextra");
+    }else{
+        navcontainer[0].classList.add("navbaropenextra");
+        navcontainer[0].classList.remove("navbarcloseextra");
+    }
+})
 var add =document.getElementById("add");
 var del = document.getElementById("delete");
 var edit = document.getElementById("edit");
@@ -67,7 +79,7 @@ var Awarningname = document.getElementById("Awarningname");
 var Ainputname = document.getElementById("Aname");
 Ainputname.addEventListener('input',function(){
     var length = this.value.length;
-    if(length==17){
+    if(length==18){
         Awarningname.style.display= "block";
     }else{
         Awarningname.style.display ="";
@@ -89,7 +101,7 @@ var Ewarningname = document.getElementById("Ewarningname");
 var Einputname = document.getElementById("Ename");
 Einputname.addEventListener('input',function(){
     var length = this.value.length;
-    if(length==17){
+    if(length==18){
         Ewarningname.style.display= "block";
     }else{
         Ewarningname.style.display ="";

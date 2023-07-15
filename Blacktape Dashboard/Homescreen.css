@@ -23,6 +23,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+#bar{
+    display: none;
+}
 
 .logo > img {
     width: 7em;
@@ -88,7 +91,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    padding: 30px 0 20px 10px;
+    padding: 30px 0 20px 0px;
 }
 
 .navcontainer {
@@ -284,8 +287,39 @@ input[type='date']{
     font-size: 1.2em;
     border-radius: 0.2em;
 }
+@keyframes open {
+    0%{
+        left: -100vw;
+    }
+    100%{
+        left: -1vw;
+    }
+}
+@keyframes close{
+    0%{
+        left: -1vw;
+    }
+    100%{
+        left: -100vw;
+    }
+}
+.navbaropenextra{
+    animation: open 0.8s forwards;
+}
+.navbarcloseextra{
+    animation: close 0.6s forwards;
+}
 /* Responsive CSS Here */
 @media screen and (max-width: 950px) {
+    #bar{
+        display: block;
+    }
+    .input-box > input{
+        width: 30vw;
+    }
+    .input-box > ::-webkit-file-upload-button{
+        width: 50%;
+    }
     ::-webkit-file-upload-button{
         width: 20%;
     }
@@ -298,7 +332,7 @@ input[type='date']{
     }
 
         .nav-option h3 {
-            font-size: 15px;
+            font-size: 18px;
         }
 
     .report-topic-heading,
@@ -309,6 +343,14 @@ input[type='date']{
 }
 
 @media screen and (max-width: 850px) {
+    ::-webkit-file-upload-button{
+        width: 30%;
+    }
+    .nav{
+        width: fit-content;
+        background-color: white;
+        position: absolute;
+    }
     .nav-img {
         height: 30px;
     }
@@ -334,12 +376,6 @@ input[type='date']{
         top: 0;
         left: -100vw;
     }
-
-    .nav {
-        width: 100%;
-        position: absolute;
-    }
-
     .navclose {
         left: 00px;
     }
@@ -371,6 +407,12 @@ input[type='date']{
 }
 
 @media screen and (max-width: 490px) {
+    .input-box > input{
+        width: 70vw;
+    }
+    .input-box > ::-webkit-file-upload-button{
+        width: 50%;
+    }
     ::-webkit-file-upload-button{
         width: 50%;
     }
@@ -398,7 +440,7 @@ input[type='date']{
     }
 
         .nav-option h3 {
-            font-size: 12px;
+            font-size: 20px;
         }
 
     .nav-upper-options {
