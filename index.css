@@ -83,7 +83,13 @@ body > .dark{
     color: var(--secondary-color);
     text-decoration-line: none;
 }
-
+.price {
+   
+    font-family: 'Poppins', sans-serif;
+    font-size:0.5em;
+    font-weight:300;
+    padding-bottom:0.5em;
+}
 /* navbar hover style */
 .sidebar>.navigation>a::after {
     content: ' ';

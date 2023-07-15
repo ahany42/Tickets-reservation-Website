@@ -1,21 +1,23 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
+    <title>Admins</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upcoming:admin</title>
-    <link rel="stylesheet" href="Policyscreen.css">
+    <link rel="stylesheet" href="Upcomingscreen.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
 
         <div class="logosec">
-            <div class="logo"><img src="2crop23.png">  </div>
+            <div class="logo"><img src="2crop23.png"> </div>
             <!-- <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
                  class="icn menuicn"
                  id="menuicn"
@@ -37,7 +39,6 @@
                         </div>
                     </a>
                     <a href="Upcomingscreen.html">
-
                         <div class="option2 nav-option">
 
                             <h3> Upcoming Events</h3>
@@ -51,24 +52,29 @@
                         </div>
                     </a>
 
+                    <a href="Policyscreen.html">
+                        <div class="nav-option option4">
 
-                    <div class="nav-option option4">
-
-                        <h3> Policy</h3>
-                    </div>
+                            <h3> Policy</h3>
+                        </div>
+                    </a>
 
                     <a href="Programsscreen.html">
+
                         <div class="nav-option option5">
 
                             <h3> Programs</h3>
                         </div>
                     </a>
+
                     <a href="Ticketscreen.html">
+
                         <div class="nav-option option6">
 
-                            <h3> Tickets</h3>
+                            <h3>Tickets</h3>
                         </div>
                     </a>
+
                     <a href="newadmin.html">
                         <div class="nav-option option7">
 
@@ -87,62 +93,39 @@
         </div>
         <div class="main">
             <div class="report-container">
-                <div class="Title">Policy</div>
+                <div class="Title">Manage Admins</div>
                 <div class="options">
                     <button class="change" id="add">Add</button>
                     <button class="change" id="delete">Delete</button>
-                    <button class="change" id="edit">Edit</button>
                 </div>
                 <div class="Addform form" id="Addform">
                     <div class="input-box">
-                        <span class="details">Title</span>
-                        <input type="text" id="Aname" placeholder="Enter Title" maxlength="40">
+                        <span class="details">Username</span>
+                        <input type="text" id="Aname" maxlength="17" placeholder="Create username">
                         <span class="warning" id="Awarningname"><i class="fa fa-light fa-circle-exclamation"></i>Text limit reached</span>
                     </div>
                     <div class="input-box">
-                        <span class="details">Policy description</span>
-                        <textarea id="ADesc" maxlength="573" placeholder="Enter Policy Description" style="width: 100%; height: 15vh;"></textarea>
-                        <span class="warning" id="Awarningdesc"><i class="fa fa-light fa-circle-exclamation"></i>Text limit reached</span>
+                        <span class="details">Password</span>
+                        <input type="text" class="Aname" maxlength="17" placeholder="Create password">
+                        <span class="warning" id="Awarningname"><i class="fa fa-light fa-circle-exclamation"></i>Text limit reached</span>
                     </div>
                     <button class="finalbutton">Add</button>
                 </div>
                 <div class="Deleteform form" id="Deleteform">
                     <div class="input-box">
-                        <span class="details">Policy Title</span>
+                        <span class="details">User name</span>
                         <select name="events" id="events">
-                            <option value="">Title</option>
-                            <option value="">Title</option>
-                            <option value="">Title</option>
+                            <option value="">Username</option>
+                            <option value="">Username</option>
+                            <option value="">Username</option>
                         </select>
-                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a title</span>
+                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Choose a Username</span>
                     </div>
                     <button class="finalbutton">Delete</button>
                 </div>
-                <div class="Editform form" id="Editform">
-                    <div class="input-box">
-                        <span class="details">Policy Title</span>
-                        <select name="events" id="events" class="EditEvent">
-                            <option value="Title">Title</option>
-                            <option value="Title">Title</option>
-                            <option value="Title">Title</option>
-                        </select>
-                        <span class="warning" id="EwarningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a title</span>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Policy Title</span>
-                        <input type="text" id="Ename" value="" maxlength="40" placeholder="" class="programname" >
-                        <span class="warning" id="Ewarningname"><i class="fa fa-light fa-circle-exclamation"></i>Text limit reached</span>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Policy Description</span>
-                        <textarea id="EDesc" placeholder="Enter Policy Description" maxlength="573" style="width: 100%; height: 15vh;"></textarea>
-                        <span class="warning" id="Ewarningdesc"><i class="fa fa-light fa-circle-exclamation"></i>Text limit reached</span>
-                    </div>
-                    <button class="finalbutton">Edit</button>
-                </div>
             </div>
-        </div>
     </div>
-    <script src="Policyscreen.js"></script>
+        </div>
+    <script src="Upcomingscreen.js"></script>
 </body>
 </html>
