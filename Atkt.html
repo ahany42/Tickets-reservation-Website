@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,56 +13,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Join us</title>
 </head>
+
 <body>
-    <div class="container">
+    <div id="FormId" class="container">
         <div class="title">Apply Now</div>
         <form action="">
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">First Name</span>
                     <input type="text" id="Fname" placeholder="Enter your First name" required>
-                    <span class="warning" id="warningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
+                    <span class="warning" id="warningFname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a
+                        name</span>
                 </div>
                 <div class="input-box">
                     <span class="details">Last Name</span>
                     <input type="text" id="Lname" placeholder="Enter your Last name" required>
-                    <span class="warning" id="warningLname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a name</span>
+                    <span class="warning" id="warningLname"><i class="fa fa-light fa-circle-exclamation"></i>Enter a
+                        name</span>
                 </div>
                 <div class="input-box">
                     <span class="details">Phone Number</span>
                     <input type="text" id="phone" placeholder="Enter your number" required>
-                    <span class="warning" id="warningphone"><i class="fa fa-light fa-circle-exclamation"></i>Enter a vaild phone number</span>
+                    <span class="warning" id="warningphone"><i class="fa fa-light fa-circle-exclamation"></i>Enter a
+                        vaild phone number</span>
                 </div>
                 <div class="input-box">
                     <span class="details">Email</span>
                     <input type="text" id="Email" placeholder="Enter your email" required>
-                    <span class="warning" id="warningemail"><i class="fa fa-light fa-circle-exclamation"></i>Enter a valid email. Make sure it's written like example@email.com</span>
-                    
+                    <span class="warning" id="warningemail"><i class="fa fa-light fa-circle-exclamation"></i>Enter a
+                        valid email. Make sure it's written like example@email.com</span>
+
                 </div>
                 <div class="input-box">
                     <span class="details">Birth Date</span>
                     <input type="date" id="date" placeholder="Enter your age" required>
-                    <span class="warning" id="warningdate"><i class="fa fa-light fa-circle-exclamation"></i>Enter a vaild date.</span>
+                    <span class="warning" id="warningdate"><i class="fa fa-light fa-circle-exclamation"></i>Enter a
+                        vaild date.</span>
                 </div>
             </div>
-                <div class="gender-details">
-                    <input type="radio" name="gender" id="dot-1">
-                    <input type="radio" name="gender" id="dot-2">
-                    <span class="gender-title">Gender</span>
-                    <div class="category">
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <span class="gender-title">Gender</span>
+                <div class="category">
                     <label for="dot-1">
                         <span class="dot one"></span>
                         <span class="gender">Male</span>
                     </label>
                     <label for="dot-2">
-                        <span id="dot"class="dot two"></span>
+                        <span id="dot" class="dot two"></span>
                         <span id="dot" class="gender">Female</span>
                     </label>
 
                 </div>
-                </div>
-                
-                <span class="warning" id="warninggender"><i class="fa fa-light fa-circle-exclamation"></i>Select your gender.</span>
+            </div>
+
+            <span class="warning" id="warninggender"><i class="fa fa-light fa-circle-exclamation"></i>Select your
+                gender.</span>
             <a class="button" id="join">
                 <div type="search" value="Join" id="submitform">Join</div>
             </a>
@@ -70,6 +78,17 @@
             </div>
         </form>
     </div>
-    <script src="Atkt.js"></script>
+    </div>
+    <div id="completionMessage" class="model-box">
+        <i class="fa-regular fa-circle-check"></i>
+        <h2>Completed</h2>
+        <h3>We received your application,We will contact you shortly</h3>
+        <div class="buttons">
+            <a href="index.html"><button class="close-btn">Ok, Close</button></a>
+        </div>
+    </div>
+
 </body>
+<script src="Atkt.js"></script>
+
 </html>

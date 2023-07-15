@@ -26,6 +26,7 @@ body{
     background-position-x: center;
     padding: 25px 30px;
     border-radius: 5px;
+    display: block;
 }
 .container > .title{
     position: relative;
@@ -175,6 +176,56 @@ a{
     text-align: center;
     padding: 0.1em 0;
 }
+.model-box{
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 30px 20px;
+    background-color: white;
+    display: none;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.model-box > i{
+    font-size: 70px;
+    color: black;
+    
+}
+.model-box > h2{
+    margin-top: 20px;
+    font-size: 25px;
+    color: black;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+}
+.model-box > h3{
+    font-size: 15px;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Poppins',sans-serif;
+}
+.model-box > .buttons{
+    margin-top: 25px;
+}
+.model-box  .close-btn{
+    font-size: 18px;
+    padding: 6px 12px;
+    margin: 0 10px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    transition: .5s;
+}
+.model-box  .close-btn:hover{
+    scale: 1.2;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
 @media(max-width:584px){
     .container{
         max-width: 100%;
@@ -183,6 +234,7 @@ a{
         margin-bottom: 15px;
         width:100%;
     }
+   
 }
 /* Mobile */
 @media (max-width:767px) {
@@ -193,5 +245,6 @@ a{
     ::-webkit-scrollbar {
         display: none;
        }
+      
 }
 

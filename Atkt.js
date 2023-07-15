@@ -83,10 +83,20 @@ function validation(){
         warninggender.style.display = "none";
     }
     if(success){
-        join.setAttribute("href","index.html");
+        //book.setAttribute("href","index.html");
+            // Show completion message
+            var completionMessage = document.getElementById("completionMessage");
+            completionMessage.style.display = "flex";
+    
+            // Hide the form
+            var form = document.getElementById("FormId");
+            form.style.display = "none";
+        
         submitbutton.disabled = false;
     }else{
         submitbutton.disabled = true;
     }
+   // completionMessage.classList.add('open');
 }
 join.addEventListener('click',validation);
+console.log("hello");
