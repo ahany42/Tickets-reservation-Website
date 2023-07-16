@@ -7,6 +7,7 @@ var warningFname=document.getElementById("warningFname");
 var warningLname=document.getElementById("warningLname");
 var warninggender=document.getElementById("warninggender");
 var submitbutton = document.getElementById("submitform");
+var body = document.body;
 //const emailInput = document.getElementById("Email");
 submitbutton.disabled = true;
 function validation(){
@@ -94,6 +95,8 @@ function validation(){
             // Show completion message
             var completionMessage = document.getElementById("completionMessage");
             completionMessage.style.display = "flex";
+            body.style.height = "100vh";
+            body.style.marginTop = "0";
     
             // Hide the form
             var form = document.getElementById("FormId");
