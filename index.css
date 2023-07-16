@@ -371,6 +371,16 @@ body > .dark > .circle:hover{
     color: var(--secondary-color);
     font-size: 0.3em;
 }
+#notavId{
+    text-align: center;
+    color: red;
+    display: block;
+    font-size: 15px;
+    visibility: hidden;
+}
+#notavId > i{
+    padding-right: 0.5em;
+}
 
 @keyframes rise {
     100% {
