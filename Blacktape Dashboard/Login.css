@@ -18,7 +18,7 @@
     padding: 1rem;
     position: relative;
     justify-content: center;
-    max-width: 50vw;
+    /* max-width: 50vw; */
     border-block: solid;
     box-shadow: 0 0 5px black;
 
@@ -220,29 +220,16 @@ header {
 
 /*noo comment -_-*/
 @media (min-width:615px) and (max-width:991px) {
-    .input-container input {
-        width: 20em;
+    .loginform{
+        zoom: 1.5;
+        padding-top: 12vh;
     }
 }
-
-@media (min-width:555px) and (max-width:615px) {
+@media (min-width:280px) and (max-width:615px) {
     .input-container input {
-        width: 17em;
-
+        width: 100%;
     }
-}
-
-@media (min-width:395px) and (max-width:555px) {
-    .input-container input {
-        width: 12em;
-
-    }
-}
-@media (min-width:280px) and (max-width:395px) {
-    .input-container input {
-        width: 10em;
-    }
-    .form{
-        width: 14em;
-    }
+     .form{
+        width: 95%;
+    } 
 }
