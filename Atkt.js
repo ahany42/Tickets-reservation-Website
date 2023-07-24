@@ -38,7 +38,7 @@ function validation(){
     console.log(phone)
     console.log(phonelength)
     var isPhone = false;
-    if(phone[0]=='0' && phone[1]=='1' && (phone[2]=='0' ||phone[2]=='1' || phone[2]=='2' || phone[2]=='3') && phonelength >0 && phonelength==11){
+    if(phone[0]=='0' && phone[1]=='1' && (phone[2]=='0' ||phone[2]=='1' || phone[2]=='2' || phone[2]=='5') && phonelength >0 && phonelength==11){
         isPhone = true;
     }
     if(isPhone){
