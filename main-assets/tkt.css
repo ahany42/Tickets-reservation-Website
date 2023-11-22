@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue',sans-serif;
+}
+@font-face {
+    font-family: Extenda;
+    src: url(extenda-30-deca.otf);
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,rgb(45, 43, 43),#96AED0);
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    background-image: url(/main-assets/ticket.png);
+    background-repeat: no-repeat;
+    background-size: 5em 7em ;
+    background-position-x: center;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: block;
+}
+.container > .title{
+    position: relative;
+    font-size: 70px;
+    font-weight: 500;
+    text-align: center;
+    font-family: Extenda;
+}
+/* .container > .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg,rgb(45, 43, 43),#d2b933);
+} */
+.container > form > .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0  12px 0;
+}
+form > .user-details > .input-box{
+    margin-bottom: 15px;
+    width: calc(100%/ 2 - 20px);
+}
+.user-details > .input-box > ,details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details > .input-box >input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+}
+input[type='date']{
+    padding-right: 0.5em;
+}
+.user-details > .input-box >input:focus,
+.user-details > .input-box >input:valid{
+    border-color: black;
+}
+#nationalid{
+    padding-left: 0;
+    border: 0;
+}
+::-webkit-file-upload-button{
+    background-color: black;
+    color: white;
+    font-family: 'Bebas Neue' ,sans-serif;
+    border-radius: 0.5em;
+    margin-right: 4.5em;
+    width: 50%;
+    height: 100%;
+}
+form > .gender-details > .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form > .gender-details > .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.gender-details > .category > label{
+    display: flex;
+    align-items: center;
+}
+.gender-details  .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d6c9c9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+#dot-1:checked ~ .category label  .one,
+#dot-2:checked ~ .category label .two{
+    border-color: #e3dada93;
+    background: black;
+
+}
+form input[type="radio"]{
+    display: none;
+}
+form > .button{
+    height: 45px;
+    margin-top: 45px;
+    transition: 0.6s;
+}
+form > .button > input,.button > div{
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background: black;
+    transition: .5s;
+}
+form .button input:hover{
+    background: black;
+}
+.button:hover,.button > div:hover {
+    color: white;
+    scale: 1.05;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  .cancelcontainer{
+    display: flex;
+    justify-content: center;
+  }
+.cancel{
+    text-align: center;
+    text-decoration-line: none;
+    color: black;
+    padding-top: 1em;
+}
+.cancel:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.warning{
+    color: red;
+    display: none;
+    padding-top: 0.5em;
+}
+.warning > i{
+    padding-right: 0.5em;
+}
+#warninggender{
+    padding-bottom: 0.5em;
+}
+a{
+    text-decoration-line: none;
+}
+.button > div{
+    text-align: center;
+    padding: 0.1em 0;
+}
+.model-box{
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 30px 20px;
+    background-color: white;
+    display: none;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+/*.model-box .open{
+    transform: scale(1.2);
+}*/
+/* mesh aref a style ba3d ma ados 3ala book el popup ytla3 b animation help law 7ad 3aref @ramy el rgoola help*/
+
+.model-box > i{
+    font-size: 70px;
+    color: black;
+    
+}
+.model-box > h2{
+    margin-top: 20px;
+    font-size: 25px;
+    color: black;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+}
+.model-box > h3{
+    font-size: 15px;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Poppins',sans-serif;
+}
+.model-box > .buttons{
+    margin-top: 25px;
+}
+.model-box  .close-btn{
+    font-size: 18px;
+    padding: 6px 12px;
+    margin: 0 10px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    transition: .5s;
+}
+.model-box  .close-btn:hover{
+    scale: 1.2;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+
+
+@media(max-width:399px){
+    .container{
+        max-width: 100%;
+    }
+    body{
+        height: fit-content;
+        margin-top: 20%;
+    }
+    form > .user-details > .input-box{
+        margin-bottom: 15px;
+        width:100%;
+    }
+    ::-webkit-file-upload-button{
+        background-color: black;
+        color: white;
+        font-family: 'Bebas Neue' ,sans-serif;
+        border-radius: 0.5em;
+        margin-right:18%;
+        width: 50%;
+        height: 100%;
+    }
+}
+/* Mobile */
+@media (min-width:400px) and (max-width:767px) {
+    .container{
+        max-width: 100%;
+    }
+    form > .user-details > .input-box{
+        margin-bottom: 15px;
+        width:100%;
+    }
+    body{
+        height: fit-content;
+        margin-top: 20%;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+       }
+       ::-webkit-file-upload-button{
+        background-color: black;
+        color: white;
+        font-family: 'Bebas Neue' ,sans-serif;
+        border-radius: 0.5em;
+        margin-right:27%;
+        width: 50%;
+        height: 100%;
+    }
+    /*popup responsive ramy <3?*/
+    /*.model-box {
+        padding: 20px;
+      }*/
+}
+/* Small screen */
+@media (min-width:768px) and (max-width:991px) {
+
+}
