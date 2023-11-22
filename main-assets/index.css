@@ -195,7 +195,7 @@ body > .dark > .circle:hover{
 }*/
 
 #main {
-    background-image: url(/main-assets/Main-logo.png);
+    background-image: url(Main-logo.png);
     background-position: center;
     background-size: cover;
     width: 94%;
@@ -278,14 +278,14 @@ body > .dark > .circle:hover{
 }
 
 .imagecard::before {
-    background-image: url(/main-assets/Lamp.png);
+    background-image: url(Lamp.png);
 }
 
 .imagecard1::before {
-    background-image: url(/main-assets/Faith.png);
+    background-image: url(Faith.png);
 }
 .imagecard2::before {
-    background-image: url(/main-assets/vroom.png);
+    background-image: url(vroom.png);
 }
 
 .info {
