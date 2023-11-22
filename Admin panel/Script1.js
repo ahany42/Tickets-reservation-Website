@@ -1,11 +1,4 @@
-// JavaScript source code
-/* let menuicn = document.querySelector(".menuicn");
-let nav = document.querySelector(".navcontainer");
 
-menuicn.addEventListener("click", () => {
-    nav.classList.toggle("navclose");
-}) */
-//total users on load
 for(var i=0;events.length>i;++i) {
     if(events[i].style.display=="" /* || events[i].style.display=="flex" */){
         eventindex = i;
