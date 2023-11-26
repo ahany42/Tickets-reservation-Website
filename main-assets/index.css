@@ -195,11 +195,12 @@ body > .dark > .circle:hover{
 }*/
 
 #main {
-    background-image: url(Main-logo.png);
+    background-image: url(ticket-small.png);
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
     width: 94%;
     height: 100vh;
+    background-repeat: no-repeat;
     /* background: #000; */
     background-color: black;
     display: flex;
@@ -207,7 +208,12 @@ body > .dark > .circle:hover{
     align-items: center;
     scroll-behavior: smooth;
 }
-
+.maindes{
+    font-size:2em;
+    font-weight:800;
+    color:#fff;
+ 
+}
 /* #main > img {
     padding-right: 5em;
 } */
